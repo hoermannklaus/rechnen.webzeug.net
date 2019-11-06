@@ -1,0 +1,47 @@
+{
+    "calculations": {
+        "single": "Rechnung",
+        "multiple": "Rechnungen",
+        "addition": "Addition",
+        "subtraction": "Subtraktion",
+        "multiplication": "Multiplikation",
+        "division": "Division"
+    },
+    "appTitle": "Zufallsgenerator für einfache Mathe Arbeitsblätter",
+    "createSheet": "Arbeitsblatt erstellen",
+    "example": "Beispiel",
+    "startpage": {
+        "title": "Startseite",
+        "header": "Zufallsgenerator für einfache Mathe Arbeitsblätter",
+        "introtext": "Auf dieser Website wird es euch ermöglicht <strong>einfache Mathematik Grundrechnungsarten Arbeitsblätter</strong> zu erstellen und auszudrucken. Die erstellen Rechnungen werden dabei <strong>zufällig</strong> generiert.",
+        "predefined": {
+            "addition": {
+                "introtext": "Erstellen eines Arbeitsblatts mit <strong>45 Additionen</strong>, wobei das Ergebnis immer zwischen <strong>10</strong> und <strong>100</strong> liegt."
+            },
+            "subtraction": {
+                "introtext": "Erstellen eines Arbeitsblatts mit <strong>45 Subtraktionen</strong>, wobei das Ergebnis immer zwischen <strong>10</strong> und <strong>100</strong> liegt."
+            },
+            "multiplication": {
+                "introtext": "Erstellen eines Arbeitsblatts mit <strong>45 Multiplikationen</strong>, wobei der 1. und 2. Faktor zwischen <strong>1</strong> und <strong>10</strong> bleiben."
+            },
+            "division": {
+                "introtext": "Erstellen eines Arbeitsblatts mit <strong>45 Divisionen</strong>. Diese entsprechen den umgekehrten Multiplikationen."
+            }
+        },
+        "wannKnowMore": "Mehr über diesen Generator erfahren?"
+    },
+    "generatorpage": {
+        "title": "Generator",
+        "buttons": {
+            "print": "Zettel ausdrucken",
+            "return": "Zurück zur Startseite",
+            "regenerate": "Rechnungen neu generieren"
+        },
+        "sheetTitle": {
+            "addition": "Addition mit Ergebnis zwischen %d und %d",
+            "subtraction": "Subtraktion mit Ergebnis zwischen %d und %d",
+            "multiplication": "Multiplikation mit Faktoren zwischen %d und %d",
+            "division": "Division"
+        }
+    }
+}

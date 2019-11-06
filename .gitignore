@@ -1,0 +1,3 @@
+vendor/*
+langcache/*
+composer.phar

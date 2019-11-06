@@ -1,0 +1,19 @@
+{
+    "name": "klaus/simple-calc-generator",
+    "description": "A generator for simple calculations like addition, subtraction, multiplication and division.",
+    "license": "no",
+    "authors": [
+        {
+            "name": "Klaus Hörmann-Engl",
+            "email": "hoermann.klaus@gmail.com"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "^4.3",
+        "components/jquery": "^3.4",
+        "philipp15b/php-i18n": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {"SimpleMathWorksheetGenerator\\": "src/"}
+    }
+}

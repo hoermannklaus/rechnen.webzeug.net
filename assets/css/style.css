@@ -1,0 +1,8 @@
+.result {
+    border: 1px solid black;
+    display: inline-block;
+    height: 40px;
+    position: relative;
+    top: 10px;
+    width: 80px;
+}

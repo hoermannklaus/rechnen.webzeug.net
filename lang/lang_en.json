@@ -1,0 +1,47 @@
+{
+    "calculations": {
+        "single": "calculation",
+        "multiple": "calculations",
+        "addition": "Addition",
+        "subtraction": "Subtraction",
+        "multiplication": "Multiplication",
+        "division": "Division"
+    },
+    "appTitle": "Random generator for simple math worksheets",
+    "createSheet": "Generate worksheet",
+    "example": "Example",
+    "startpage": {
+        "title": "Startpage",
+        "header": "Random generator for simple math worksheets",
+        "introtext": "Using this website you can generate <strong>simple basic arithmetic worksheets</strong> and print them out. The created calculations are generated using PHPs <strong>random</strong> function.",
+        "predefined": {
+            "addition": {
+                "introtext": "Create a worksheet with <strong>45 additions</strong>, where the result lies between <strong>10</strong> and <strong>100</strong>."
+            },
+            "subtraction": {
+                "introtext": "Create a worksheet with <strong>45 subtractions</strong>, where the result lies between <strong>10</strong> and <strong>100</strong>."
+            },
+            "multiplication": {
+                "introtext": "Create a worksheet with <strong>45 multiplications</strong>, where the 1. and 2. factor lie between <strong>1</strong> and <strong>10</strong>."
+            },
+            "division": {
+                "introtext": "Create a worksheet with <strong>45 divisions</strong>. They are the opposite of the multiplicatioins."
+            }
+        },
+        "wannKnowMore": "Wanna know more about this generator?"
+    },
+    "generatorpage": {
+        "title": "Generator",
+        "buttons": {
+            "print": "Print sheet",
+            "return": "Return to startpage",
+            "regenerate": "Regenerate calculations"
+        },
+        "sheetTitle": {
+            "addition": "Addition with result between %d and %d",
+            "subtraction": "Subtraction with result between %d and %d",
+            "multiplication": "Multiplication with factors between %d and %d",
+            "division": "Division"
+        }
+    }
+}
