@@ -9,7 +9,7 @@ $i18n->init();
 <html>
   <head>
     <meta charset="UTF-8">
-    <title><?php echo L::appTitle; ?> - <?php echo L::startpage_title; ?></title>
+    <title><?php echo L::domain; ?> - <?php echo L::appTitle; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css" type="text/css">

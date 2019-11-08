@@ -7,7 +7,8 @@
         "multiplication": "Multiplikation",
         "division": "Division"
     },
-    "appTitle": "Zufallsgenerator für einfache Mathe Arbeitsblätter",
+    "domain": "webzeug.net",
+    "appTitle": "Mathe Übungsblätter für Schüler",
     "createSheet": "Arbeitsblatt erstellen",
     "example": "Beispiel",
     "startpage": {
