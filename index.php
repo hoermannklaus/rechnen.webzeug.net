@@ -127,7 +127,7 @@ $language = $i18n->getAppliedLang();
         <div class="row">
             <div class="col">
                 <div class="jumbotron text-center">
-                    <a class="btn btn-secondary" href="help.php" role="button">
+                    <a class="btn btn-secondary" href="faq.php" role="button">
                         <i class="fa fa-question-circle"></i> <?php echo L::startpage_wannKnowMore; ?>
                     </a>
                 </div>
