@@ -31,7 +31,7 @@ $language = $i18n->getAppliedLang();
             </div>
         </div>
 
-        <div class="row">
+        <div class="row mb-3">
             <!-- ADDITION -->
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card bg-primary text-white mb-3">
@@ -105,6 +105,23 @@ $language = $i18n->getAppliedLang();
             </div>
         </div>
 
+        <div class="row mb-3">
+            <!-- MIXED 1: EQUAL -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card bg-info text-white mb-3">
+                    <div class="card-header">
+                        <i class="fa fa-blender"></i> <strong><?php echo L::startpage_predefined_mixedequal_title; ?></strong>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-test"><?php echo L::startpage_predefined_mixedequal_introtext; ?></p>
+                        <a href="generator.php?type=mixedequal&amount=45&resultMin=0&resultMax=100&factor1=1&factor2=10&cols=3" class="btn btn-secondary">
+                            <i class="fa fa-blender text-info"></i> <?php echo L::createSheet; ?>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col">
                 <div class="jumbotron text-center">
@@ -114,6 +131,7 @@ $language = $i18n->getAppliedLang();
                 </div>
             </div>
         </div>
+
         <?php require_once('./assets/partials/imprint.php'); ?>
     </div>
   </body>

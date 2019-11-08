@@ -27,6 +27,10 @@
             },
             "division": {
                 "introtext": "Create a worksheet with <strong>45 divisions</strong>. They are the opposite of the multiplicatioins."
+            },
+            "mixedequal": {
+                "title": "Mixed 1",
+                "introtext": "Creates a mixed calculation sheet. The distribution of the 4 basic operations is done equally."
             }
         },
         "wannKnowMore": "Wanna know more about this generator?"
@@ -42,7 +46,8 @@
             "addition": "Addition with result between %d and %d",
             "subtraction": "Subtraction with result between %d and %d",
             "multiplication": "Multiplication with factors between %d and %d",
-            "division": "Division"
+            "division": "Division",
+            "mixedequal": "Mixed (equally distributed)"
         }
     }
 }

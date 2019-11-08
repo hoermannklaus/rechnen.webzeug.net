@@ -6,26 +6,28 @@ use RechnenWebzeugNet\CalcGenerator;
 $i18n = new i18n('lang/lang_{LANGUAGE}.json', 'langcache/', 'de');
 $i18n->init();
 
-$params = $_GET;
-$amount = $params['amount'];
-$generator = new CalcGenerator($amount);
+$generator = new CalcGenerator();
 $calculations = [];
-switch ($params['type']) {
+switch ($_GET['type']) {
     case 'addition':
-        $title = ucfirst(sprintf(L::generatorpage_sheetTitle_addition, $params['resultMin'], $params['resultMax']));
-        $calculations = $generator->generateAdditions($params['resultMin'], $params['resultMax']);
+        $title = ucfirst(sprintf(L::generatorpage_sheetTitle_addition, $_GET['resultMin'], $_GET['resultMax']));
+        $calculations = $generator->generateAdditions($_GET['amount'], $_GET['resultMin'], $_GET['resultMax']);
         break;
     case 'subtraction':
-    $title = ucfirst(sprintf(L::generatorpage_sheetTitle_subtraction, $params['resultMin'], $params['resultMax']));
-        $calculations = $generator->generateSubtractions($params['resultMin'], $params['resultMax']);
+    $title = ucfirst(sprintf(L::generatorpage_sheetTitle_subtraction, $_GET['resultMin'], $_GET['resultMax']));
+        $calculations = $generator->generateSubtractions($_GET['amount'], $_GET['resultMin'], $_GET['resultMax']);
         break;
     case 'multiplication':
-        $title = ucfirst(sprintf(L::generatorpage_sheetTitle_multiplication, $params['factor1'], $params['factor2']));
-        $calculations = $generator->generateMultiplications($params['factor1'], $params['factor2']);
+        $title = ucfirst(sprintf(L::generatorpage_sheetTitle_multiplication, $_GET['factor1'], $_GET['factor2']));
+        $calculations = $generator->generateMultiplications($_GET['amount'], $_GET['factor1'], $_GET['factor2']);
         break;
     case 'division':
         $title = ucfirst(L::generatorpage_sheetTitle_division);
-        $calculations = $generator->generateDivisions($params['factor1'], $params['factor2']);
+        $calculations = $generator->generateDivisions($_GET['amount'], $_GET['factor1'], $_GET['factor2']);
+        break;
+    case 'mixedequal':
+        $title = ucfirst(L::generatorpage_sheetTitle_mixedequal);
+        $calculations = $generator->generateMixedEqual($_GET['amount'], $_GET['resultMin'], $_GET['resultMax'], $_GET['factor1'], $_GET['factor2']);
         break;
     default:
         break;
@@ -74,16 +76,17 @@ function addSpaceForSingleDigit(int $number) {
                 <div class="jumbotron mt-5">
                     <h1><?php echo $title; ?></h1>
                     <p class="lead">
-                        <?php echo $amount; ?> <?php echo L::calculations_multiple; ?>
+                        <?php echo $_GET['amount']; ?> <?php echo L::calculations_multiple; ?>
+                    </p>
                 </div>
             </div>
         </div>
         <div class="row">
             <?php 
-            $rows = ceil(count($calculations) / $params['cols']);
+            $rows = ceil(count($calculations) / $_GET['cols']);
             $lists = array_chunk($calculations, $rows);
             foreach ($lists as $column) {
-                $cols = 12/$params['cols'];
+                $cols = 12/$_GET['cols'];
                 echo "<div class='col-xs-12 col-sm-6 col-md-" . $cols . "'>";
                 foreach ($column as $item) {
                     $output = $item->getRenderOutput();

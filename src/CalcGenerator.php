@@ -14,67 +14,49 @@ use RechnenWebzeugNet\Calculations\Division;
  */
 class CalcGenerator {
 
-    /**
-     * The amount of calculations to generate.
-     */
-    protected $amount;
-
-    /**
-     * Constructor for new CalculationGenerator objects.
-     * It creates a new random number generator.
-     * 
-     * @param int $amount The amount of calculations to generate
-     * @return void
-     */
-    public function __construct(int $amount) {
-        $this->amount = $amount;
-    }
-
-    /**
-     * Generate additions
-     * 
-     * @param int $minResult The minimum possible result.
-     * @param int $maxResult The maximum possible result.
-     * @return array Holding all the additions.
-     */
-    public function generateAdditions(int $minResult, int $maxResult): array {
+    public function generateAdditions(int $amount, int $minResult, int $maxResult): array {
         $additions = [];
-        for ($i = 0; $i < $this->amount; $i++) {
+        for ($i = 0; $i < $amount; $i++) {
             $additions[] = Addition::createRandomAddition($minResult, $maxResult);
         }
         return $additions;
     }
 
-    /**
-     * Generate subtractions with the help of generated additions
-     * 
-     * @param int $minResult The minimum result of the addition.
-     * @param int $maxResult The maximum result of the addition.
-     * @return array Holding all the subtractions.
-     */
-    public function generateSubtractions(int $minResult, int $maxResult): array {
-        $additions = $this->generateAdditions($minResult, $maxResult);
+    public function generateSubtractions(int $amount, int $minResult, int $maxResult): array {
+        $additions = $this->generateAdditions($amount, $minResult, $maxResult);
         $subtractions = [];
-        for ($i = 0; $i < $this->amount; $i++) {
+        for ($i = 0; $i < $amount; $i++) {
             $subtractions[] = $additions[$i]->getSubtraction();
         }
         return $subtractions;
     }
 
-    public function generateMultiplications(int $factor1, int $factor2): array {
+    public function generateMultiplications(int $amount, int $factor1, int $factor2): array {
         $multiplications = [];
-        for ($i = 0; $i < $this->amount; $i++) {
+        for ($i = 0; $i < $amount; $i++) {
             $multiplications[] = Multiplication::createRandomMultiplication($factor1, $factor2);
         }
         return $multiplications;
     }
 
-    public function generateDivisions(int $factor1, int $factor2): array {
-        $multiplications = $this->generateMultiplications($factor1, $factor2);
+    public function generateDivisions(int $amount, int $factor1, int $factor2): array {
+        $multiplications = $this->generateMultiplications($amount, $factor1, $factor2);
         $divisions = [];
-        for ($i = 0; $i < $this->amount; $i++) {
+        for ($i = 0; $i < $amount; $i++) {
             $divisions[] = $multiplications[$i]->getDivision();
         }
         return $divisions;
+    }
+
+    public function generateMixedEqual(int $amount, int $minResult, int $maxResult, int $factor1, int $factor2) {
+        $eachAmount = intdiv($amount, 4);
+        $rest = $amount % $eachAmount;
+        $calculations = [];
+        $calculations = array_merge($calculations, $this->generateAdditions($eachAmount, $minResult, $maxResult));
+        $calculations = array_merge($calculations, $this->generateSubtractions($eachAmount, $minResult, $maxResult));
+        $calculations = array_merge($calculations, $this->generateMultiplications($eachAmount, $factor1, $factor2));
+        $calculations = array_merge($calculations, $this->generateDivisions($eachAmount + $rest, $factor1, $factor2));
+        shuffle($calculations);
+        return $calculations;
     }
 }

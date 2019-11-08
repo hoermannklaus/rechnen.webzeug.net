@@ -26,6 +26,10 @@
             },
             "division": {
                 "introtext": "Erstellen eines Arbeitsblatts mit <strong>45 Divisionen</strong>. Diese entsprechen den umgekehrten Multiplikationen."
+            },
+            "mixedequal": {
+                "title": "Gemischt 1",
+                "introtext": "Erstellen eines <strong>gemischten</strong> Arbeitsblatts der 4 Grundrechenarten. Die Verteilung der Arten erfolgt <strong>gleichmäßig</strong>."
             }
         },
         "wannKnowMore": "Mehr über diesen Generator erfahren?"
@@ -41,7 +45,8 @@
             "addition": "Addition mit Ergebnis zwischen %d und %d",
             "subtraction": "Subtraktion mit Ergebnis zwischen %d und %d",
             "multiplication": "Multiplikation mit Faktoren zwischen %d und %d",
-            "division": "Division"
+            "division": "Division",
+            "mixedequal": "Gemischt (gleichmäßig verteilt)"
         }
     }
 }
