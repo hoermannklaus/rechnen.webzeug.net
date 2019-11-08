@@ -3,6 +3,9 @@ require __DIR__ . '/vendor/autoload.php';
 
 $i18n = new i18n('lang/lang_{LANGUAGE}.json', 'langcache/', 'de');
 $i18n->init();
+
+$version = RechnenWebzeugNet\ApplicationVersion::get();
+$language = $i18n->getAppliedLang();
 ?>
 
 <!DOCTYPE html>
