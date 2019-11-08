@@ -10,7 +10,6 @@
         }
     ],
     "require": {
-        "twbs/bootstrap": "^4.3",
         "philipp15b/php-i18n": "^4.0"
     },
     "autoload": {
