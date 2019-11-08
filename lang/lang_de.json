@@ -1,4 +1,8 @@
 {
+    "domain": "webzeug.net",
+    "appTitle": "Mathe Übungsblätter für Schüler",
+    "createSheet": "Arbeitsblatt erstellen",
+    "example": "Beispiel",
     "calculations": {
         "single": "Rechnung",
         "multiple": "Rechnungen",
@@ -7,12 +11,7 @@
         "multiplication": "Multiplikation",
         "division": "Division"
     },
-    "domain": "webzeug.net",
-    "appTitle": "Mathe Übungsblätter für Schüler",
-    "createSheet": "Arbeitsblatt erstellen",
-    "example": "Beispiel",
     "startpage": {
-        "title": "Startseite",
         "header": "Zufallsgenerator für einfache Mathe Arbeitsblätter",
         "introtext": "Auf dieser Website wird es euch ermöglicht <strong>einfache Mathematik Grundrechnungsarten Arbeitsblätter</strong> zu erstellen und auszudrucken. Die erstellen Rechnungen werden dabei <strong>zufällig</strong> generiert.",
         "predefined": {
