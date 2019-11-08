@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleMathWorksheetGenerator;
+namespace rechnenWebzeugNet;
 
 class Calc {
 

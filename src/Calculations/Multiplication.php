@@ -1,8 +1,8 @@
 <?php
 
-namespace SimpleMathWorksheetGenerator\Calculations;
+namespace RechnenWebzeugNet\Calculations;
 
-use SimpleMathWorksheetGenerator\Calculations\Division;
+use RechnenWebzeugNet\Calculations\Division;
 
 /**
  * Class represents a multiplication.

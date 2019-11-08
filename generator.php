@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-use SimpleMathWorksheetGenerator\CalcGenerator;
+use RechnenWebzeugNet\CalcGenerator;
 
 $i18n = new i18n('lang/lang_{LANGUAGE}.json', 'langcache/', 'de');
 $i18n->init();

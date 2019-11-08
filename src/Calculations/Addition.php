@@ -1,8 +1,8 @@
 <?php
 
-namespace SimpleMathWorksheetGenerator\Calculations;
+namespace RechnenWebzeugNet\Calculations;
 
-use SimpleMathWorksheetGenerator\Calculations\Subtraction;
+use RechnenWebzeugNet\Calculations\Subtraction;
 
 /**
  * Class represents an addition.

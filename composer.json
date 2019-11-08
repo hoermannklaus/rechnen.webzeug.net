@@ -1,5 +1,5 @@
 {
-    "name": "klaus/simple-calc-generator",
+    "name": "klaus/rechnen.webzeug.net",
     "description": "A generator for simple calculations like addition, subtraction, multiplication and division.",
     "license": "no",
     "authors": [
@@ -14,6 +14,6 @@
         "philipp15b/php-i18n": "^4.0"
     },
     "autoload": {
-        "psr-4": {"SimpleMathWorksheetGenerator\\": "src/"}
+        "psr-4": {"RechnenWebzeugNet\\": "src/"}
     }
 }

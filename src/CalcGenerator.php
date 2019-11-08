@@ -1,11 +1,11 @@
 <?php
 
-namespace SimpleMathWorksheetGenerator;
+namespace RechnenWebzeugNet;
 
-use SimpleMathWorksheetGenerator\Calculations\Addition;
-use SimpleMathWorksheetGenerator\Calculations\Subtraction;
-use SimpleMathWorksheetGenerator\Calculations\Multiplication;
-use SimpleMathWorksheetGenerator\Calculations\Division;
+use RechnenWebzeugNet\Calculations\Addition;
+use RechnenWebzeugNet\Calculations\Subtraction;
+use RechnenWebzeugNet\Calculations\Multiplication;
+use RechnenWebzeugNet\Calculations\Division;
 
 /**
  * Calculation generator

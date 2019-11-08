@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleMathWorksheetGenerator\Calculations;
+namespace RechnenWebzeugNet\Calculations;
 
 interface Calculation {
     public function getRenderOutput();
