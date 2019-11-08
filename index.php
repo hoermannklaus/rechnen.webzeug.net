@@ -12,9 +12,9 @@ $language = $i18n->getAppliedLang();
 <html>
   <head>
     <meta charset="UTF-8">
-    <title><?php echo L::domain . " - " . L::appTitle; ?></title>
+    <title><?php echo L::appTitle . " - " . L::domain; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <?php require_once('assets/partials/headerIncludes.php'); ?>
+    <?php require_once('./includes/headerIncludes.php'); ?>
   </head>
   <body>
     <div class="container">
@@ -132,7 +132,9 @@ $language = $i18n->getAppliedLang();
             </div>
         </div>
 
-        <?php require_once('./assets/partials/footer.php'); ?>
+        <?php //require_once('./includes/navbar.php'); ?>
+
+        <?php require_once('./includes/footer.php'); ?>
     </div>
   </body>
 </html>

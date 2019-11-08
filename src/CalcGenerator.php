@@ -59,4 +59,8 @@ class CalcGenerator {
         shuffle($calculations);
         return $calculations;
     }
+
+    public function generateMixedUnequal(int $amount, int $minResult, int $maxResult, int $factor2, int $factor1) {
+        
+    }
 }

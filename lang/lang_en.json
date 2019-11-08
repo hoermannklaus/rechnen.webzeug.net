@@ -49,5 +49,10 @@
             "division": "Division",
             "mixedequal": "Mixed (equally distributed)"
         }
+    },
+    "helppage": {
+        "title": "Help",
+        "header": "Help for the worksheet generator",
+        "introtext": "This page contains informations about the functionality of the worksheet generator as well as other interesting facts."
     }
 }

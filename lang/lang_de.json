@@ -48,5 +48,10 @@
             "division": "Division",
             "mixedequal": "Gemischt (gleichmäßig verteilt)"
         }
+    },
+    "helppage": {
+        "title": "Hilfe",
+        "header": "Hilfe zum Übungsblatt Generator",
+        "introtext": "Diese Seite beinhaltet Informationen zu der Funktionsweise und sonstigen interessanten Rahmenbedinungen des Übungsblatt Generators."
     }
 }

@@ -48,7 +48,7 @@ function addSpaceForSingleDigit(int $number) {
     <meta charset="UTF-8">
     <title><?php echo L::appTitle; ?> - <?php echo L::generatorpage_title; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <?php require_once('assets/partials/headerIncludes.php'); ?>
+    <?php require_once('./includes/headerIncludes.php'); ?>
   </head>
   <body>
     <div class="container-fluid">
