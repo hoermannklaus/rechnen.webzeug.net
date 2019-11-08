@@ -1,6 +1,7 @@
 {
     "name": "klaus/rechnen.webzeug.net",
     "description": "A generator for simple calculations like addition, subtraction, multiplication and division.",
+    "type": "project",
     "license": "no",
     "authors": [
         {
