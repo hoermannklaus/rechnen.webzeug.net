@@ -132,7 +132,7 @@ $language = $i18n->getAppliedLang();
             </div>
         </div>
 
-        <?php require_once('./assets/partials/imprint.php'); ?>
+        <?php require_once('./assets/partials/footer.php'); ?>
     </div>
   </body>
 </html>
