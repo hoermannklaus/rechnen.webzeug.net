@@ -1,7 +1,7 @@
 <div class="row mb-4">
     <div class="col">
         <small class="text-muted">
-            &copy; <?php echo strftime('%G'); ?> Klaus Hörmann-Engl, <a href="mailto:hoermann.klaus@gmail.com">hoermann.klaus@gmail.com</a>
+            &copy; <?php echo strftime('%G'); ?> Klaus Hörmann-Engl, <a href="mailto:klaus@webzeug.net">klaus@webzeug.net</a>
         </small>
     </div>
     <div class="col">
