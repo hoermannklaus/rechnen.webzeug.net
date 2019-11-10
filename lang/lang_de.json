@@ -1,6 +1,6 @@
 {
     "domain": "webzeug.net",
-    "appTitle": "Mathe Übungsblätter für Schüler",
+    "appTitle": "Übungsblatt Generator für Schüler",
     "createSheet": "Arbeitsblatt erstellen",
     "example": "Beispiel",
     "calculations": {
@@ -32,7 +32,7 @@
                 "introtext": "Erstellen eines <strong>gemischten</strong> Arbeitsblatts der 4 Grundrechenarten. Die Verteilung der Arten erfolgt <strong>gleichmäßig</strong>."
             }
         },
-        "wannKnowMore": "Mehr über diesen Generator erfahren?"
+        "wannKnowMore": "Mehr über diesen Generator erfahren? Hier gehts zu den FAQs!"
     },
     "generatorpage": {
         "title": "Generator",
@@ -49,9 +49,29 @@
             "mixedequal": "Gemischt (gleichmäßig verteilt)"
         }
     },
-    "helppage": {
-        "title": "Hilfe",
-        "header": "Hilfe zum Übungsblatt Generator",
-        "introtext": "Diese Seite beinhaltet Informationen zu der Funktionsweise und sonstigen interessanten Rahmenbedinungen des Übungsblatt Generators."
+    "faq": {
+        "title": "FAQs",
+        "header": "FAQs zum Übungsblatt Generator",
+        "introtext": "Diese Seite beinhaltet Informationen zu der Funktionsweise und sonstigen interessanten Rahmenbedinungen des Übungsblatt Generators.",
+        "one": {
+            "question": "Was ist der Übungsblatt Generator?",
+            "answer": "Der Übungsblatt Generator ist eine <strong>Website</strong>, mit Hilfe derer man <strong>Übungsblätter der 4 Grundrechnungsarten (Addition, Subtraktion, Multiplikation, Division)</strong> erstellen kann. Dabei ist die <strong>Ausgabe im Browser zum Ausdrucken optimiert</strong>. Somit stellt der Übungsblatt Generator <strong>ein Hilfsmittel für Eltern</strong> dar, Übungshilfen für ihre Kinder zu erstellen."
+        },
+        "two": {
+            "question": "Wie funktioniert der Übungsblatt Generator?",
+            "answer": "Der Generator bedient sich einer <strong>Zufallsfunktion</strong> um die Rechnungen zu erstellen. Hierbei werden die <strong>Rahmebedingungen</strong> der Erstellung dieser Zufallszahl <strong>bereits im Vorfeld definiert</strong>, sodass hier <strong>für Volksschüler sinnvolle und lösbare Rechenaufgaben</strong> entstehen. Ich habe geplant in Zukunft einen <strong>'Konfigurator'</strong> zu erstellen, der es den Anwendern ermöglicht die Zahlenbereiche der zufällig generierten Zahlen selbst zu konfigurieren. Dabei können schwierigere Aufgaben erstellt werden."
+        },
+        "three": {
+            "question": "Warum genau 45 Aufgaben?",
+            "answer": "Als <strong>optimale Darstellung zum Ausdrucken</strong> hat sich ein <strong>3 spaltiges Layout</strong> erwiesen. Und bei <strong>15 Aufgaben</strong> pro Spalten ergeben sich <strong>45 Rechnungen</strong>. Im zukünftigen Generator kann der Benutzer die gewünschte Anzahl der Aufgaben selber einstellen."
+        },
+        "four": {
+            "question": "Wie bin ich auf die Idee gekommen?",
+            "answer": "Meine ältere Tochter geht aktuell in die <strong>3. Klasse Volksschule</strong>. Auf Nachfrage von Ihr, ich sollte ihr doch Rechenaufgaben auf einen Zettel schreiben, damit sie diese üben könnte, kam mir die Idee eines Generators. Dieser sollte übers Internet jedem zur Verfügung stehen. Und vorallem sollte er die Aufgaben nach einen Zufallsprinzip erstellen können. <strong>Dann müßte ich  mir weniger Gedanken machen ;-)</strong>"
+        },
+        "five": {
+            "question": "Wie kann ich einen Fehler, Kritik oder einen Wunsch äußern?",
+            "answer": "Ich freue mich über <strong>jede Art von Nachricht</strong>, egal ob Lob(!), Kritik oder auch einen Wunsch bzgl. der Funktionalitäten der Anwendung. Dazu einfach einen Email an <strong><a href='mailto:klaus@webzeug.net'>klaus@webzeug.net</a></strong> senden. Ich bemühe mich schnell zu antworten."
+        }
     }
 }

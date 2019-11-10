@@ -50,9 +50,21 @@
             "mixedequal": "Mixed (equally distributed)"
         }
     },
-    "helppage": {
+    "faq": {
         "title": "Help",
         "header": "Help for the worksheet generator",
-        "introtext": "This page contains informations about the functionality of the worksheet generator as well as other interesting facts."
+        "introtext": "This page contains informations about the functionality of the worksheet generator as well as other interesting facts.",
+        "one": {
+            "question": "",
+            "answer": ""
+        },
+        "two": {
+            "question": "",
+            "answer": ""
+        },
+        "three": {
+            "question": "",
+            "answer": ""
+        }
     }
 }
