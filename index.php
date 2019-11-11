@@ -18,7 +18,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
     $subtractionLink = L::startpage_predefined_subtraction_url;;
     $multiplicationLink = L::startpage_predefined_multiplication_url;;
     $divisionLink = L::startpage_predefined_division_url;;
-    $mixed1Link = L::startpage_predefined_mixed1_url;;
+    $mixedEqualLink = L::startpage_predefined_mixedequal_url;;
 }
 
 
@@ -132,7 +132,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
                     </div>
                     <div class="card-body">
                         <p class="card-test"><?php echo L::startpage_predefined_mixedequal_introtext; ?></p>
-                        <a href="<?php echo $mixed1Link; ?>" class="btn btn-secondary">
+                        <a href="<?php echo $mixedEqualLink; ?>" class="btn btn-secondary">
                             <i class="fa fa-blender text-info"></i> <?php echo L::createSheet; ?>
                         </a>
                     </div>
