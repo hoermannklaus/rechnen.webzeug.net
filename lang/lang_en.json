@@ -57,19 +57,27 @@
     },
     "faq": {
         "title": "Help",
-        "header": "Help for the worksheet generator",
-        "introtext": "This page contains informations about the functionality of the worksheet generator as well as other interesting facts.",
+        "header": "Help for the Worksheet-Generator",
+        "introtext": "This page contains informations about the functionality of the Worksheet-Generator as well as other interesting facts.",
         "one": {
-            "question": "",
-            "answer": ""
+            "question": "What is the Worksheet-Generator?",
+            "answer": "The Worksheet Generator is a <strong>website</strong>, which helps to <strong>create worksheets for the 4 basic arithmetic operations (addition, subtraction, multiplication, division)</strong>. The output of the worksheet is <strong>optimized for print</strong>. Therefor the Worksheet-Generator represents <strong>a tool for parents to help create worksheets for their children</strong>."
         },
         "two": {
-            "question": "",
-            "answer": ""
+            "question": "How does the Worksheet-Generator work?",
+            "answer": "The Worksheet-Generator uses a <strong>random function</strong> to create all calculations. The sourrounding conditions for the predefined worksheets contained in the startpage where already set, in order to <strong>create meaningfull worksheets for elementary school pupils</strong>. <br>There is a Generator planned for the future, by which the user may choose the desired arithmetic operations as well as the according conditions."
         },
         "three": {
-            "question": "",
-            "answer": ""
+            "question": "Why are there 45 calculations in the predefined worksheets?",
+            "answer": "I figured that the ideal way of outputting the calculations was a <strong>3 column layout</strong>. 2 columns left too much whitespace, 4 columns were to dense. Also adding <strong>15 calculcations per column</strong> resulted in a total of 45."
+        },
+        "four": {
+            "question": "How did I get the idea for this application?",
+            "answer": "My older daugther attends the <strong>3rd class of elementary school</strong>. She once approached me and asked if I could write down some calculations for her to practice. While writing down some additions and subtractions, I came about the idea of programming a website, which uses a random generator to create these calculations. <strong>So that I would have less work to do ;-)</strong> "
+        }, 
+        "five": {
+            "question": "How can I report a bug, express criticism or propose a feature?",
+            "answer": "I am <strong>very happy about each single request</strong>, no matter the nature of the message (praise, criticism or suggestion). Just write an email to <a href='mailto:klaus@webzeug.net'>klaus@webzeug.net</a>. I will try to respond as quickly as possible. <strong>Thank you very much.</strong>"
         }
     }
 }

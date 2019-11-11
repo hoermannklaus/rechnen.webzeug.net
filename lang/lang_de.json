@@ -13,7 +13,7 @@
     },
     "startpage": {
         "header": "Zufallsgenerator für einfache Mathe Arbeitsblätter",
-        "introtext": "Auf dieser Website wird es euch ermöglicht <strong>einfache Mathematik Grundrechnungsarten Arbeitsblätter</strong> zu erstellen und auszudrucken. Die erstellen Rechnungen werden dabei <strong>zufällig</strong> generiert.",
+        "introtext": "Auf dieser Website wird es euch ermöglicht <strong>einfache Mathematik Arbeitsblätter</strong> für die <strong>4 Grundrechungsarten</strong> zu erstellen. Die Darstellung dieser Arbeitsblätter ist <strong>druckoptimiert</strong>, sodass ein Ausdrucken gut möglich ist. Die erstellen Rechnungen werden dabei <strong>zufällig</strong> generiert.",
         "predefined": {
             "addition": {
                 "url": "addition",
@@ -57,26 +57,26 @@
     "faq": {
         "title": "FAQs",
         "header": "FAQs zum Übungsblatt Generator",
-        "introtext": "Diese Seite beinhaltet Informationen zu der Funktionsweise und sonstigen interessanten Rahmenbedinungen des Übungsblatt Generators.",
+        "introtext": "Diese Seite beinhaltet FAQs zu den verschiedensten Themen rund um den Übungsblatt Generator.",
         "one": {
             "question": "Was ist der Übungsblatt Generator?",
             "answer": "Der Übungsblatt Generator ist eine <strong>Website</strong>, mit Hilfe derer man <strong>Übungsblätter der 4 Grundrechnungsarten (Addition, Subtraktion, Multiplikation, Division)</strong> erstellen kann. Dabei ist die <strong>Ausgabe im Browser zum Ausdrucken optimiert</strong>. Somit stellt der Übungsblatt Generator <strong>ein Hilfsmittel für Eltern</strong> dar, Übungshilfen für ihre Kinder zu erstellen."
         },
         "two": {
             "question": "Wie funktioniert der Übungsblatt Generator?",
-            "answer": "Der Generator bedient sich einer <strong>Zufallsfunktion</strong> um die Rechnungen zu erstellen. Hierbei werden die <strong>Rahmebedingungen</strong> der Erstellung dieser Zufallszahl <strong>bereits im Vorfeld definiert</strong>, sodass hier <strong>für Volksschüler sinnvolle und lösbare Rechenaufgaben</strong> entstehen. Ich habe geplant in Zukunft einen <strong>'Konfigurator'</strong> zu erstellen, der es den Anwendern ermöglicht die Zahlenbereiche der zufällig generierten Zahlen selbst zu konfigurieren. Dabei können schwierigere Aufgaben erstellt werden."
+            "answer": "Der Generator bedient sich einer <strong>Zufallsfunktion</strong> um die Rechnungen zu erstellen. Hierbei werden die <strong>Rahmenbedingungen</strong> der Erstellung dieser Zufallszahlen <strong>bereits im Vorfeld definiert</strong>, sodass hier <strong>für Volksschüler sinnvolle und lösbare Rechenaufgaben</strong> entstehen (siehe farbige Boxen auf der <a href='index.php'>Startseite</a>). <br>Ich habe geplant in Zukunft einen <strong>'Konfigurator'</strong> zu erstellen, der es den Anwendern ermöglicht die Zahlenbereiche der zufällig generierten Zahlen selbst zu konfigurieren. D.h. man kann die bevorzugten Grundrechnungsarten auswählen, und diese nach eigenen Wünschen konfigurieren."
         },
         "three": {
             "question": "Warum genau 45 Aufgaben?",
-            "answer": "Als <strong>optimale Darstellung zum Ausdrucken</strong> hat sich ein <strong>3 spaltiges Layout</strong> erwiesen. Und bei <strong>15 Aufgaben</strong> pro Spalten ergeben sich <strong>45 Rechnungen</strong>. Im zukünftigen Generator kann der Benutzer die gewünschte Anzahl der Aufgaben selber einstellen."
+            "answer": "Als <strong>optimale Darstellung zum Ausdrucken</strong> hat sich ein <strong>3 spaltiges Layout</strong> erwiesen. Und bei <strong>15 Aufgaben</strong> pro Spalten ergeben sich <strong>45 Rechnungen</strong>. <br>Im zukünftigen Generator kann der Benutzer die gewünschte Anzahl der Aufgaben selber einstellen."
         },
         "four": {
             "question": "Wie bin ich auf die Idee gekommen?",
-            "answer": "Meine ältere Tochter geht aktuell in die <strong>3. Klasse Volksschule</strong>. Auf Nachfrage von Ihr, ich sollte ihr doch Rechenaufgaben auf einen Zettel schreiben, damit sie diese üben könnte, kam mir die Idee eines Generators. Dieser sollte übers Internet jedem zur Verfügung stehen. Und vorallem sollte er die Aufgaben nach einen Zufallsprinzip erstellen können. <strong>Dann müßte ich  mir weniger Gedanken machen ;-)</strong>"
+            "answer": "Meine ältere Tochter geht aktuell in die <strong>3. Klasse Volksschule</strong>. Auf deren Anfrage, ich sollte ihr doch Rechenaufgaben auf einen Zettel schreiben, damit sie diese üben könne, kam mir die Idee eines Zufallsgenerators für Grundrechungsarten. Dieser sollte übers Internet jedem zur Verfügung stehen. Und vorallem sollte er die Aufgaben nach einen Zufallsprinzip erstellen können. <strong>Dann müßte ich  mir weniger Gedanken machen ;-)</strong>"
         },
         "five": {
             "question": "Wie kann ich einen Fehler, Kritik oder einen Wunsch äußern?",
-            "answer": "Ich freue mich über <strong>jede Art von Nachricht</strong>, egal ob Lob(!), Kritik oder auch einen Wunsch bzgl. der Funktionalitäten der Anwendung. Dazu einfach einen Email an <strong><a href='mailto:klaus@webzeug.net'>klaus@webzeug.net</a></strong> senden. Ich bemühe mich schnell zu antworten."
+            "answer": "Ich freue mich über <strong>jede Art von Nachricht</strong>, egal ob Lob(!), Kritik oder auch einen Wunsch bzgl. der Funktionalitäten der Anwendung. Dazu einfach einen Email an <strong><a href='mailto:klaus@webzeug.net'>klaus@webzeug.net</a></strong> senden. Ich bemühe mich schnell zu antworten. <strong>Vielen Dank!</strong>"
         }
     }
 }
