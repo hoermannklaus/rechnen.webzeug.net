@@ -44,7 +44,7 @@ $faqs = [ 'one', 'two', 'three', 'four', 'five'];
                     <div class="card">
                         <div class="card-header" id="heading<?php echo $faq; ?>">
                             <h2 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse<?php echo $faq; ?>" aria-expanded="false" aria-controls="collapse<?php echo $faq; ?>">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" id="faq-<?php echo $faq; ?>" data-target="#collapse<?php echo $faq; ?>" aria-expanded="false" aria-controls="collapse<?php echo $faq; ?>">
                                     <?php $question = "faq_".$faq."_question"; echo $counter . ". "; echo call_user_func('L::' . $question); ?>
                                 </button>
                             </h2>
