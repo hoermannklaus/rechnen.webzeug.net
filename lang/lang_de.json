@@ -16,18 +16,23 @@
         "introtext": "Auf dieser Website wird es euch ermöglicht <strong>einfache Mathematik Grundrechnungsarten Arbeitsblätter</strong> zu erstellen und auszudrucken. Die erstellen Rechnungen werden dabei <strong>zufällig</strong> generiert.",
         "predefined": {
             "addition": {
+                "url": "addition",
                 "introtext": "Erstellen eines Arbeitsblatts mit <strong>45 Additionen</strong>, wobei das Ergebnis immer zwischen <strong>10</strong> und <strong>100</strong> liegt."
             },
             "subtraction": {
+                "url": "subtraktion",
                 "introtext": "Erstellen eines Arbeitsblatts mit <strong>45 Subtraktionen</strong>, wobei das Ergebnis immer zwischen <strong>10</strong> und <strong>100</strong> liegt."
             },
             "multiplication": {
+                "url": "multiplikation",
                 "introtext": "Erstellen eines Arbeitsblatts mit <strong>45 Multiplikationen</strong>, wobei der 1. und 2. Faktor zwischen <strong>1</strong> und <strong>10</strong> bleiben."
             },
             "division": {
+                "url": "division",
                 "introtext": "Erstellen eines Arbeitsblatts mit <strong>45 Divisionen</strong>. Diese entsprechen den umgekehrten Multiplikationen."
             },
             "mixedequal": {
+                "url": "mixed1",
                 "title": "Gemischt 1",
                 "introtext": "Erstellen eines <strong>gemischten</strong> Arbeitsblatts der 4 Grundrechenarten. Die Verteilung der Arten erfolgt <strong>gleichmäßig</strong>."
             }

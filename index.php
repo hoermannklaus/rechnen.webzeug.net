@@ -6,6 +6,22 @@ $i18n->init();
 
 $version = RechnenWebzeugNet\ApplicationVersion::get();
 $language = $i18n->getAppliedLang();
+
+if ($_SERVER['SERVER_NAME'] == 'localhost') {
+    $additionLink = "generator.php?type=addition&amount=45&resultMin=10&resultMax=100&cols=3";
+    $subtractionLink = "generator.php?type=subtraction&amount=45&resultMin=10&resultMax=100&cols=3";
+    $multiplicationLink = "generator.php?type=multiplication&amount=45&factor1=1&factor2=10&cols=3";
+    $divisionLink = "generator.php?type=division&amount=45&factor1=1&factor2=10&cols=3";
+    $mixed1Link = "generator.php?type=mixedequal&amount=45&resultMin=0&resultMax=100&factor1=1&factor2=10&cols=3";
+} else {
+    $additionLink = L::startpage_predefined_addition_url;
+    $subtractionLink = L::startpage_predefined_subtraction_url;;
+    $multiplicationLink = L::startpage_predefined_multiplication_url;;
+    $divisionLink = L::startpage_predefined_division_url;;
+    $mixed1Link = L::startpage_predefined_mixed1_url;;
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +58,7 @@ $language = $i18n->getAppliedLang();
                     </div>
                     <div class="card-body">
                         <p class="card-test"><?php echo L::startpage_predefined_addition_introtext; ?></p>
-                        <a href="generator.php?type=addition&amount=45&resultMin=10&resultMax=100&cols=3" class="btn btn-secondary">
+                        <a href="<?php echo $additionLink; ?>" class="btn btn-secondary">
                             <i class="fa fa-plus text-primary"></i> <?php echo L::createSheet; ?>
                         </a>
                     </div>
@@ -60,7 +76,7 @@ $language = $i18n->getAppliedLang();
                     </div>
                     <div class="card-body">
                         <p class="card-test"><?php echo L::startpage_predefined_subtraction_introtext; ?></p>
-                        <a href="generator.php?type=subtraction&amount=45&resultMin=10&resultMax=100&cols=3" class="btn btn-secondary">
+                        <a href="<?php echo $subtractionLink; ?>" class="btn btn-secondary">
                             <i class="fa fa-minus text-danger"></i> <?php echo L::createSheet; ?>
                         </a>
                     </div>
@@ -78,7 +94,7 @@ $language = $i18n->getAppliedLang();
                     </div>
                     <div class="card-body">
                         <p class="card-test"><?php echo L::startpage_predefined_multiplication_introtext; ?></p>
-                        <a href="generator.php?type=multiplication&amount=45&factor1=1&factor2=10&cols=3" class="btn btn-secondary">
+                        <a href="<?php echo $multiplicationLink; ?>" class="btn btn-secondary">
                             <i class="fa fa-times text-success"></i> <?php echo L::createSheet; ?>
                         </a>
                     </div>
@@ -96,7 +112,7 @@ $language = $i18n->getAppliedLang();
                     </div>
                     <div class="card-body">
                         <p class="card-test"><?php echo L::startpage_predefined_division_introtext; ?></p>
-                        <a href="generator.php?type=division&amount=45&factor1=1&factor2=10&cols=3" class="btn btn-secondary">
+                        <a href="<?php echo $divisionLink; ?>" class="btn btn-secondary">
                             <i class="fa fa-divide text-warning"></i> <?php echo L::createSheet; ?>
                         </a>
                     </div>
@@ -116,7 +132,7 @@ $language = $i18n->getAppliedLang();
                     </div>
                     <div class="card-body">
                         <p class="card-test"><?php echo L::startpage_predefined_mixedequal_introtext; ?></p>
-                        <a href="generator.php?type=mixedequal&amount=45&resultMin=0&resultMax=100&factor1=1&factor2=10&cols=3" class="btn btn-secondary">
+                        <a href="<?php echo $mixed1Link; ?>" class="btn btn-secondary">
                             <i class="fa fa-blender text-info"></i> <?php echo L::createSheet; ?>
                         </a>
                     </div>
