@@ -1,3 +1,20 @@
 RewriteEngine On
 RewriteCond %{SERVER_PORT} !=443
 RewriteRule ^(.*)$ https://rechnen.webzeug.net/$1 [R=301,L]
+
+# Predefined Addition
+Redirect 301 /addition https://rechnen.webzeug.net/generator.php?type=addition&amount=45&resultMin=10&resultMax=100&cols=3
+
+# Predefined Subtraction
+Redirect 301 /subtraktion https://rechnen.webzeug.net/generator.php?type=subtraction&amount=45&resultMin=10&resultMax=100&cols=3
+Redirect 301 /subtraction https://rechnen.webzeug.net/generator.php?type=subtraction&amount=45&resultMin=10&resultMax=100&cols=3
+
+# Predefined Multiplication
+Redirect 301 /multiplikation https://rechnen.webzeug.net/generator.php?type=multiplication&amount=45&factor1=1&factor2=10&cols=3
+Redirect 301 /multiplication https://rechnen.webzeug.net/generator.php?type=multiplication&amount=45&factor1=1&factor2=10&cols=3
+
+# Predefined Division
+Redirect 301 /division https://rechnen.webzeug.net/generator.php?type=division&amount=45&factor1=1&factor2=10&cols=3
+
+# Predefined Mixed 1
+Redirect 301 /mixed1 https://rechnen.webzeug.net/generator.php?type=mixedequal&amount=45&resultMin=0&resultMax=100&factor1=1&factor2=10&cols=3
