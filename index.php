@@ -12,7 +12,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
     $subtractionLink = "generator.php?type=subtraction&amount=45&resultMin=10&resultMax=100&cols=3";
     $multiplicationLink = "generator.php?type=multiplication&amount=45&factor1=1&factor2=10&cols=3";
     $divisionLink = "generator.php?type=division&amount=45&factor1=1&factor2=10&cols=3";
-    $mixed1Link = "generator.php?type=mixedequal&amount=45&resultMin=0&resultMax=100&factor1=1&factor2=10&cols=3";
+    $mixedEqualLink = "generator.php?type=mixedequal&amount=45&resultMin=0&resultMax=100&factor1=1&factor2=10&cols=3";
 } else {
     $additionLink = L::startpage_predefined_addition_url;
     $subtractionLink = L::startpage_predefined_subtraction_url;;
