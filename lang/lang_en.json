@@ -1,4 +1,8 @@
 {
+    "domain": "webzeug.net",
+    "appTitle": "Math worksheets for students",
+    "createSheet": "Generate worksheet",
+    "example": "Example",
     "calculations": {
         "single": "calculation",
         "multiple": "calculations",
@@ -7,11 +11,8 @@
         "multiplication": "Multiplication",
         "division": "Division"
     },
-    "domain": "webzeug.net",
-    "appTitle": "Math worksheets for students",
-    "createSheet": "Generate worksheet",
-    "example": "Example",
     "startpage": {
+        "description": "This website contains a math worksheet generator for the 4 basic arithmetic operations which uses random number to generate the calculations. The output is optimized for print.",
         "title": "Startpage",
         "header": "Random generator for simple math worksheets",
         "introtext": "Using this website you can generate <strong>simple basic arithmetic worksheets</strong> and print them out. The created calculations are generated using PHPs <strong>random</strong> function.",
@@ -42,6 +43,7 @@
     },
     "generatorpage": {
         "title": "Generator",
+        "description": "This page shows the randomly created calculations. More or less, depending on the configured amount of calculations and chosen type(s).",
         "buttons": {
             "print": "Print sheet",
             "return": "Return to startpage",

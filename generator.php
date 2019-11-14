@@ -52,10 +52,18 @@ function addSpaceForSingleDigit(int $number) {
   <head>
     <?php require_once('./includes/gtmHead.php'); ?>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+    <!-- Favicons -->
     <link rel="shortcut icon" href="<?php echo $favicon; ?>.ico" type="image/x-icon">
     <link rel="icon" href="<?php echo $favicon; ?>.ico" type="image/x-icon">
-    <title><?php echo L::appTitle; ?> - <?php echo L::generatorpage_title; ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+    <!-- Meta informationen -->
+    <title><?php echo L::appTitle . " - " . L::domain; ?></title>
+    <meta name="description" content="<?php echo L::generatorpage_description; ?>">
+	<meta name="author" content="Klaus Hörmann-Engl<klaus@webzeug.net>">
+
+    <!-- Header includes -->
     <?php require_once('./includes/headerIncludes.php'); ?>
   </head>
   <body>

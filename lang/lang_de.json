@@ -12,6 +12,7 @@
         "division": "Division"
     },
     "startpage": {
+        "description": "Mit Hilfe diese Applikation lassen sich mathematische Übungsblätter der 4 Grundrechnungsarten per Zufall erstellen. Die Ausgabe ist zum Drucken optimiert.",
         "header": "Zufallsgenerator für einfache Mathe Arbeitsblätter",
         "introtext": "Auf dieser Website wird es euch ermöglicht <strong>einfache Mathematik Arbeitsblätter</strong> für die <strong>4 Grundrechungsarten</strong> zu erstellen. Die Darstellung dieser Arbeitsblätter ist <strong>druckoptimiert</strong>, sodass ein Ausdrucken gut möglich ist. Die erstellen Rechnungen werden dabei <strong>zufällig</strong> generiert.",
         "predefined": {
@@ -41,6 +42,7 @@
     },
     "generatorpage": {
         "title": "Generator",
+        "description": "Die Ausgabeseite stellt die konfigurierten Rechnungen dar. Je nachdem welche Einstellungen getroffen wurden, sind es mehr oder weniger Rechnungen von dem gleichen oder verschiedenen Typs.",
         "buttons": {
             "print": "Zettel ausdrucken",
             "return": "Zurück zur Startseite",

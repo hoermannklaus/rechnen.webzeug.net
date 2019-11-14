@@ -29,10 +29,18 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
   <head>
     <?php require_once('./includes/gtmHead.php'); ?>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Meta information -->
     <title><?php echo L::appTitle . " - " . L::domain; ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="description" content="<?php echo L::startpage_description; ?>">
+	<meta name="author" content="Klaus Hörmann-Engl<klaus@webzeug.net>">
+
+    <!-- Header includes -->
     <?php require_once('./includes/headerIncludes.php'); ?>
   </head>
   <body>
