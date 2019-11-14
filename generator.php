@@ -12,22 +12,27 @@ switch ($_GET['type']) {
     case 'addition':
         $title = ucfirst(sprintf(L::generatorpage_sheetTitle_addition, $_GET['resultMin'], $_GET['resultMax']));
         $calculations = $generator->generateAdditions($_GET['amount'], $_GET['resultMin'], $_GET['resultMax']);
+        $favicon = "favicon_addition";
         break;
     case 'subtraction':
     $title = ucfirst(sprintf(L::generatorpage_sheetTitle_subtraction, $_GET['resultMin'], $_GET['resultMax']));
         $calculations = $generator->generateSubtractions($_GET['amount'], $_GET['resultMin'], $_GET['resultMax']);
+        $favicon = "favicon_subtraction";
         break;
     case 'multiplication':
         $title = ucfirst(sprintf(L::generatorpage_sheetTitle_multiplication, $_GET['factor1'], $_GET['factor2']));
         $calculations = $generator->generateMultiplications($_GET['amount'], $_GET['factor1'], $_GET['factor2']);
+        $favicon = "favicon_multiplication";
         break;
     case 'division':
         $title = ucfirst(L::generatorpage_sheetTitle_division);
         $calculations = $generator->generateDivisions($_GET['amount'], $_GET['factor1'], $_GET['factor2']);
+        $favicon = "favicon_division";
         break;
     case 'mixedequal':
         $title = ucfirst(L::generatorpage_sheetTitle_mixedequal);
         $calculations = $generator->generateMixedEqual($_GET['amount'], $_GET['resultMin'], $_GET['resultMax'], $_GET['factor1'], $_GET['factor2']);
+        $favicon = "favicon";
         break;
     default:
         break;
@@ -47,6 +52,8 @@ function addSpaceForSingleDigit(int $number) {
   <head>
     <?php require_once('./includes/gtmHead.php'); ?>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="<?php echo $favicon; ?>.ico" type="image/x-icon">
+    <link rel="icon" href="<?php echo $favicon; ?>.ico" type="image/x-icon">
     <title><?php echo L::appTitle; ?> - <?php echo L::generatorpage_title; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <?php require_once('./includes/headerIncludes.php'); ?>
