@@ -76,6 +76,10 @@
         "five": {
             "question": "Wie kann ich einen Fehler, Kritik oder einen Wunsch äußern?",
             "answer": "Ich freue mich über <strong>jede Art von Nachricht</strong>, egal ob Lob(!), Kritik oder auch einen Wunsch bzgl. der Funktionalitäten der Anwendung. Dazu einfach einen Email an <strong><a href='mailto:klaus@webzeug.net'>klaus@webzeug.net</a></strong> senden. Ich bemühe mich schnell zu antworten. <strong>Vielen Dank!</strong>"
+        },
+        "six": {
+            "question": "Wo sehe ich den Quellcode dieses Programms? Ist dieser Open-Source?",
+            "answer": "Der Quellcode dieser Anwendung kann von jedem auf Github eingesehen werden: <a href='https://github.com/hoermannklaus/rechnen.webzeug.net' target='_blank'>hoermann.klaus/rechnen.webzeug.net</a>. "
         }
     }
 }

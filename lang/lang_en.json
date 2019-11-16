@@ -77,6 +77,10 @@
         "five": {
             "question": "How can I report a bug, express criticism or propose a feature?",
             "answer": "I am <strong>very happy about each single request</strong>, no matter the nature of the message (praise, criticism or suggestion). Just write an email to <a href='mailto:klaus@webzeug.net'>klaus@webzeug.net</a>. I will try to respond as quickly as possible. <strong>Thank you very much.</strong>"
+        },
+        "six": {
+            "question": "",
+            "answer": ""
         }
     }
 }

@@ -7,7 +7,7 @@ $i18n->init();
 $version = RechnenWebzeugNet\ApplicationVersion::get();
 $language = $i18n->getAppliedLang();
 
-$faqs = [ 'one', 'two', 'three', 'four', 'five'];
+$faqs = [ 'one', 'two', 'three', 'four', 'five', 'six'];
 ?>
 
 <!DOCTYPE html>
