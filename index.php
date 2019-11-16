@@ -8,19 +8,22 @@ $version = RechnenWebzeugNet\ApplicationVersion::get();
 $language = $i18n->getAppliedLang();
 
 if ($_SERVER['SERVER_NAME'] == 'localhost') {
-    $additionLink = "generator.php?type=addition&amount=45&resultMin=10&resultMax=100&cols=3";
-    $subtractionLink = "generator.php?type=subtraction&amount=45&resultMin=10&resultMax=100&cols=3";
     $multiplicationLink = "generator.php?type=multiplication&amount=45&factor1=1&factor2=10&cols=3";
     $divisionLink = "generator.php?type=division&amount=45&factor1=1&factor2=10&cols=3";
     $mixedEqualLink = "generator.php?type=mixedequal&amount=45&resultMin=0&resultMax=100&factor1=1&factor2=10&cols=3";
 } else {
-    $additionLink = L::startpage_predefined_addition_url;
-    $subtractionLink = L::startpage_predefined_subtraction_url;;
     $multiplicationLink = L::startpage_predefined_multiplication_url;;
     $divisionLink = L::startpage_predefined_division_url;;
     $mixedEqualLink = L::startpage_predefined_mixedequal_url;;
 }
 
+$inputElements = [
+    'amount'    => '<input type="number" min="1" max="100" class="form-control width-60" id="amount" name="amount" value="45" required>',
+    'minResult' => '<input type="number" min="1" max="10000" class="form-control width-75" id="resultMin" name="resultMin" value="10" required>',
+    'maxResult' => '<input type="number" min="1" max="10000" class="form-control width-75" id="resultMax" name="resultMax" value="100" required>',
+    'factor1'   => '<input type="number" min="1" max="10000" class="form-control width-75" id="factor1" name="factor1" value="1" required>',
+    'factor2'   => '<input type="number" min="1" max="10000" class="form-control width-75" id="factor2" name="factor2" value="10" required>',
+];
 
 ?>
 
@@ -42,6 +45,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
 
     <!-- Header includes -->
     <?php require_once('./includes/headerIncludes.php'); ?>
+    <script src="assets/js/index.js"></script>
   </head>
   <body>
     <?php require_once('./includes/gtmBody.php'); ?>
@@ -58,84 +62,117 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
                 </div>
             </div>
         </div>
-
         <div class="row mb-3">
             <!-- ADDITION -->
             <div class="col-12 col-md-6 col-lg-3">
-                <div class="card bg-primary text-white mb-3">
-                    <div class="card-header">
-                        <i class="fa fa-plus"></i> <strong><?php echo L::calculations_addition; ?></strong>
+                <form action="generator.php" class="form-inline form-predefined addition" data-cookiename="addition">
+                    <div class="card bg-primary text-white mb-3">
+                        <div class="card-header">
+                            <i class="fa fa-plus"></i> <strong><?php echo L::calculations_addition; ?></strong>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-test text-justify">
+                                <?php echo sprintf(L::startpage_predefined_addition_introtext, $inputElements['amount'], $inputElements['minResult'], $inputElements['maxResult']); ?>
+                            </p>
+                            <input type="hidden" id="type" name="type" value="addition">
+                            <input type="hidden" id="cols" name="cols" value="3">
+                            <button type="submit" class="btn btn-secondary w-100">
+                                <i class="fa fa-plus text-primary"></i> <?php echo L::createSheet; ?>
+                            </button>
+                        </div>
+                        <div class="card-footer" style="display: none;">
+                            <small class="text-white">
+                                <i class="fa fa-trash-alt"></i>&nbsp;
+                                <a href="#" class="text-white delete-cookie" data-toggle="tooltip" data-placement="bottom" title="<?php echo L::deleteCookieInfo; ?>"><?php echo L::resetToDefault; ?></a>
+                            </small>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p class="card-test"><?php echo L::startpage_predefined_addition_introtext; ?></p>
-                        <a href="<?php echo $additionLink; ?>" class="btn btn-secondary">
-                            <i class="fa fa-plus text-primary"></i> <?php echo L::createSheet; ?>
-                        </a>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-white"><strong><?php echo L::example; ?>:</strong> 34 + 38 = </small>
-                    </div>
-                </div>
+                </form>
             </div>
 
             <!-- SUBTRAKTION -->
             <div class="col-12 col-md-6 col-lg-3">
-                <div class="card bg-danger text-white mb-3">
-                    <div class="card-header">
-                        <i class="fa fa-minus"></i> <strong><?php echo L::calculations_subtraction; ?></strong>
+                <form action="generator.php" class="form-inline form-predefined subtraction" data-cookiename="subtraction">
+                    <div class="card bg-danger text-white mb-3">
+                        <div class="card-header">
+                            <i class="fa fa-minus"></i> <strong><?php echo L::calculations_subtraction; ?></strong>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-test text-justify">
+                                <?php echo sprintf(L::startpage_predefined_subtraction_introtext, $inputElements['amount'], $inputElements['minResult'], $inputElements['maxResult']); ?>
+                            </p>
+                            <input type="hidden" id="type" name="type" value="subtraction">
+                            <input type="hidden" id="cols" name="cols" value="3">
+                            <button type="submit" class="btn btn-secondary w-100">
+                                <i class="fa fa-minus text-danger"></i> <?php echo L::createSheet; ?>
+                            </button>
+                        </div>
+                        <div class="card-footer" style="display: none;">
+                            <small class="text-white">
+                                <i class="fa fa-trash-alt"></i>&nbsp;
+                                <a href="#" class="text-white delete-cookie" data-toggle="tooltip" data-placement="bottom" title="<?php echo L::deleteCookieInfo; ?>"><?php echo L::resetToDefault; ?></a>
+                            </small>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p class="card-test"><?php echo L::startpage_predefined_subtraction_introtext; ?></p>
-                        <a href="<?php echo $subtractionLink; ?>" class="btn btn-secondary">
-                            <i class="fa fa-minus text-danger"></i> <?php echo L::createSheet; ?>
-                        </a>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-white"><strong><?php echo L::example; ?>:</strong> 85 - 27 = </small>
-                    </div>
-                </div>
+                </form>
             </div>
 
             <!-- MULTIPLICATION -->
             <div class="col-12 col-md-6 col-lg-3">
-                <div class="card bg-success text-white mb-3">
-                    <div class="card-header">
-                        <i class="fa fa-times"></i> <strong><?php echo L::calculations_multiplication; ?></strong>
+                <form action="generator.php" class="form-inline form-predefined multiplication" data-cookiename="multiplication">
+                    <div class="card bg-success text-white mb-3">
+                        <div class="card-header">
+                            <i class="fa fa-times"></i> <strong><?php echo L::calculations_multiplication; ?></strong>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-test text-justify">
+                                <?php echo sprintf(L::startpage_predefined_multiplication_introtext, $inputElements['amount'], $inputElements['factor1'], $inputElements['factor2']); ?>
+                            </p>
+                            <input type="hidden" id="type" name="type" value="multiplication">
+                            <input type="hidden" id="cols" name="cols" value="3">
+                            <button type="submit" class="btn btn-secondary w-100">
+                                <i class="fa fa-times text-success"></i> <?php echo L::createSheet; ?>
+                            </button>
+                        </div>
+                        <div class="card-footer" style="display: none;">
+                            <small class="text-white">
+                                <i class="fa fa-trash-alt"></i>&nbsp;
+                                <a href="#" class="text-white delete-cookie" data-toggle="tooltip" data-placement="bottom" title="<?php echo L::deleteCookieInfo; ?>"><?php echo L::resetToDefault; ?></a>
+                            </small>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p class="card-test"><?php echo L::startpage_predefined_multiplication_introtext; ?></p>
-                        <a href="<?php echo $multiplicationLink; ?>" class="btn btn-secondary">
-                            <i class="fa fa-times text-success"></i> <?php echo L::createSheet; ?>
-                        </a>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-white"><strong><?php echo L::example; ?>:</strong> 7 * 5 = </small>
-                    </div>
-                </div>
+                </form>
             </div>
 
             <!-- DIVISION -->
             <div class="col-12 col-md-6 col-lg-3">
-                <div class="card bg-warning text-white mb-3">
-                    <div class="card-header">
-                        <i class="fa fa-divide"></i> <strong><?php echo L::calculations_division; ?></strong>
+                <form action="generator.php" class="form-inline form-predefined division" data-cookiename="division">
+                    <div class="card bg-warning text-white mb-3">
+                        <div class="card-header">
+                            <i class="fa fa-divide"></i> <strong><?php echo L::calculations_division; ?></strong>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-test text-justify">
+                            <?php echo sprintf(L::startpage_predefined_division_introtext, $inputElements['amount'], $inputElements['factor1'], $inputElements['factor2']); ?>
+                            </p>
+                            <input type="hidden" id="type" name="type" value="division">
+                            <input type="hidden" id="cols" name="cols" value="3">
+                            <button type="submit" class="btn btn-secondary w-100">
+                                <i class="fa fa-divide text-warning"></i> <?php echo L::createSheet; ?>
+                            </button>
+                        </div>
+                        <div class="card-footer" style="display: none;">
+                            <small class="text-white">
+                                <i class="fa fa-trash-alt"></i>&nbsp;
+                                <a href="#" class="text-white delete-cookie" data-toggle="tooltip" data-placement="bottom" title="<?php echo L::deleteCookieInfo; ?>"><?php echo L::resetToDefault; ?></a>
+                            </small>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p class="card-test"><?php echo L::startpage_predefined_division_introtext; ?></p>
-                        <a href="<?php echo $divisionLink; ?>" class="btn btn-secondary">
-                            <i class="fa fa-divide text-warning"></i> <?php echo L::createSheet; ?>
-                        </a>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-white"><strong><?php echo L::example; ?>:</strong> 48 : 6 = </small>
-                    </div>
-                </div>
+                </form>
             </div>
-        </div>
-
-        <div class="row mb-3">
-            <!-- MIXED 1: EQUAL -->
-            <div class="col-12 col-md-6 col-lg-3">
+        
+            <!-- MIXED 1: EQUAL 
+            <div class="col-12 col-md-6 col-lg-4">
                 <div class="card bg-info text-white mb-3">
                     <div class="card-header">
                         <i class="fa fa-blender"></i> <strong><?php echo L::startpage_predefined_mixedequal_title; ?></strong>
@@ -147,7 +184,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
                         </a>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
 
         <div class="row">

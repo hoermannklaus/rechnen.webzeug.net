@@ -3,6 +3,8 @@
     "appTitle": "Übungsblatt Generator für Schüler",
     "createSheet": "Arbeitsblatt erstellen",
     "example": "Beispiel",
+    "resetToDefault": "Auf Standard Werte zurücksetzen",
+    "deleteCookieInfo": "Ihre zuletzte gesetzten Werte wurden in einem Cookie gespeichert. Diese Funktion löscht diesen und setzt die Werte auf Standard zurück.",
     "calculations": {
         "single": "Rechnung",
         "multiple": "Rechnungen",
@@ -17,25 +19,20 @@
         "introtext": "Auf dieser Website wird es euch ermöglicht <strong>einfache Mathematik Arbeitsblätter</strong> für die <strong>4 Grundrechungsarten</strong> zu erstellen. Die Darstellung dieser Arbeitsblätter ist <strong>druckoptimiert</strong>, sodass ein Ausdrucken gut möglich ist. Die erstellen Rechnungen werden dabei <strong>zufällig</strong> generiert.",
         "predefined": {
             "addition": {
-                "url": "addition",
-                "introtext": "Erstellen eines Arbeitsblatts mit <strong>45 Additionen</strong>, wobei das Ergebnis immer zwischen <strong>10</strong> und <strong>100</strong> liegt."
+                "introtext": "Erstellt Arbeitsblatt mit %s Additionen, wobei das Ergebnis immer zwischen %s und %s liegt."
             },
             "subtraction": {
-                "url": "subtraktion",
-                "introtext": "Erstellen eines Arbeitsblatts mit <strong>45 Subtraktionen</strong>, wobei das Ergebnis immer zwischen <strong>10</strong> und <strong>100</strong> liegt."
+                "introtext": "Erstellt Arbeitsblatt mit %s Subtraktionen, wobei das Ergebnis immer zwischen %s und %s liegt."
             },
             "multiplication": {
-                "url": "multiplikation",
-                "introtext": "Erstellen eines Arbeitsblatts mit <strong>45 Multiplikationen</strong>, wobei der 1. und 2. Faktor zwischen <strong>1</strong> und <strong>10</strong> bleiben."
+                "introtext": "Erstellt Arbeitsblatt mit %s Multiplikationen, wobei der 1. und 2. Faktor zwischen %s und %s bleiben."
             },
             "division": {
-                "url": "division",
-                "introtext": "Erstellen eines Arbeitsblatts mit <strong>45 Divisionen</strong>. Diese entsprechen den umgekehrten Multiplikationen."
+                "introtext": "Erstellt Arbeitsblatt mit %s Divisionen. Erstellt aus Multiplikationen, bei denen der 1. und 2. Faktor zwischen %s und %s bleiben."
             },
             "mixedequal": {
-                "url": "mixed1",
                 "title": "Gemischt 1",
-                "introtext": "Erstellen eines <strong>gemischten</strong> Arbeitsblatts der 4 Grundrechenarten. Die Verteilung der Arten erfolgt <strong>gleichmäßig</strong>."
+                "introtext": "Erstellt eines <strong>gemischten</strong> Arbeitsblatts der 4 Grundrechenarten. Die Verteilung der Arten erfolgt <strong>gleichmäßig</strong>."
             }
         },
         "wannKnowMore": "Mehr über diesen Generator erfahren? Hier gehts zu den FAQs!"
@@ -49,10 +46,10 @@
             "regenerate": "Rechnungen neu generieren"
         },
         "sheetTitle": {
-            "addition": "Addition mit Ergebnis zwischen %d und %d",
-            "subtraction": "Subtraktion mit Ergebnis zwischen %d und %d",
-            "multiplication": "Multiplikation mit Faktoren zwischen %d und %d",
-            "division": "Division",
+            "addition": "%d Addition mit Ergebnis zwischen mindestens %d und maximal %d",
+            "subtraction": "%d Subtraktion mit Ergebnis zwischen midestens %d und maximal %d",
+            "multiplication": "%d Multiplikation mit dem 1. und 2. Faktor zwischen %d und %d",
+            "division": "%d Division aus Multiplikationen deren 1. und 2. Faktor zwischen %d und %d liegen",
             "mixedequal": "Gemischt (gleichmäßig verteilt)"
         }
     },

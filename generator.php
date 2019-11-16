@@ -10,27 +10,27 @@ $generator = new CalcGenerator();
 $calculations = [];
 switch ($_GET['type']) {
     case 'addition':
-        $title = ucfirst(sprintf(L::generatorpage_sheetTitle_addition, $_GET['resultMin'], $_GET['resultMax']));
+        $subtitle = ucfirst(sprintf(L::generatorpage_sheetTitle_addition, $_GET['amount'], $_GET['resultMin'], $_GET['resultMax']));
         $calculations = $generator->generateAdditions($_GET['amount'], $_GET['resultMin'], $_GET['resultMax']);
         $favicon = "favicon_addition";
         break;
     case 'subtraction':
-    $title = ucfirst(sprintf(L::generatorpage_sheetTitle_subtraction, $_GET['resultMin'], $_GET['resultMax']));
+        $subtitle = ucfirst(sprintf(L::generatorpage_sheetTitle_subtraction, $_GET['amount'], $_GET['resultMin'], $_GET['resultMax']));
         $calculations = $generator->generateSubtractions($_GET['amount'], $_GET['resultMin'], $_GET['resultMax']);
         $favicon = "favicon_subtraction";
         break;
     case 'multiplication':
-        $title = ucfirst(sprintf(L::generatorpage_sheetTitle_multiplication, $_GET['factor1'], $_GET['factor2']));
+        $subtitle = ucfirst(sprintf(L::generatorpage_sheetTitle_multiplication, $_GET['amount'], $_GET['factor1'], $_GET['factor2']));
         $calculations = $generator->generateMultiplications($_GET['amount'], $_GET['factor1'], $_GET['factor2']);
         $favicon = "favicon_multiplication";
         break;
     case 'division':
-        $title = ucfirst(L::generatorpage_sheetTitle_division);
+        $subtitle = ucfirst(sprintf(L::generatorpage_sheetTitle_division, $_GET['amount'], $_GET['factor1'], $_GET['factor2']));
         $calculations = $generator->generateDivisions($_GET['amount'], $_GET['factor1'], $_GET['factor2']);
         $favicon = "favicon_division";
         break;
     case 'mixedequal':
-        $title = ucfirst(L::generatorpage_sheetTitle_mixedequal);
+        $subtitle = ucfirst(L::generatorpage_sheetTitle_mixedequal);
         $calculations = $generator->generateMixedEqual($_GET['amount'], $_GET['resultMin'], $_GET['resultMax'], $_GET['factor1'], $_GET['factor2']);
         $favicon = "favicon";
         break;
@@ -65,6 +65,7 @@ function addSpaceForSingleDigit(int $number) {
 
     <!-- Header includes -->
     <?php require_once('./includes/headerIncludes.php'); ?>
+    <script src="assets/js/generator.js"></script>
   </head>
   <body>
   <?php require_once('./includes/gtmBody.php'); ?>
@@ -72,16 +73,12 @@ function addSpaceForSingleDigit(int $number) {
         <div class="row d-print-none mt-5">
             <div class="col">
                 <p>
-                    <a href="#" id="print" class="btn btn-primary">
+                    <a href="#" id="print" class="btn btn-primary mr-5">
                         <i class="fa fa-print"></i> <?php echo L::generatorpage_buttons_print; ?>
                     </a>
-                </p>
-                <p>
-                    <a href="index.php" class="btn btn-secondary">
+                    <a href="index.php" class="btn btn-secondary mr-5">
                         <i class="fa fa-arrow-circle-left"></i> <?php echo L::generatorpage_buttons_return; ?>
                     </a>
-                </p>
-                <p>
                     <a href="#" id="reload" class="btn btn-success">
                         <i class="fa fa-sync-alt"></i> <?php echo L::generatorpage_buttons_regenerate; ?>
                     </a>
@@ -91,9 +88,9 @@ function addSpaceForSingleDigit(int $number) {
         <div class="row">
             <div class="col">
                 <div class="jumbotron mt-5">
-                    <h1><?php echo $title; ?></h1>
+                    <h1><?php echo call_user_func('L::calculations_' . $_GET['type']) ?></h1>
                     <p class="lead">
-                        <?php echo $_GET['amount']; ?> <?php echo L::calculations_multiple; ?>
+                        <?php echo $subtitle; ?>
                     </p>
                 </div>
             </div>

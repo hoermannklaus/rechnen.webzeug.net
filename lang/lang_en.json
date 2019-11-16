@@ -3,6 +3,8 @@
     "appTitle": "Math worksheets for students",
     "createSheet": "Generate worksheet",
     "example": "Example",
+    "resetToDefault": "Reset values to default",
+    "deleteCookieInfo": "The values you last set were saved in a cookie. This function deletes this cookie and resets the values to default.",
     "calculations": {
         "single": "calculation",
         "multiple": "calculations",
@@ -18,23 +20,18 @@
         "introtext": "Using this website you can generate <strong>simple basic arithmetic worksheets</strong> and print them out. The created calculations are generated using PHPs <strong>random</strong> function.",
         "predefined": {
             "addition": {
-                "url": "addition",
-                "introtext": "Create a worksheet with <strong>45 additions</strong>, where the result lies between <strong>10</strong> and <strong>100</strong>."
+                "introtext": "Create worksheet with %s additions, where the result lies between %s and %s."
             },
             "subtraction": {
-                "url": "subtraction",
-                "introtext": "Create a worksheet with <strong>45 subtractions</strong>, where the result lies between <strong>10</strong> and <strong>100</strong>."
+                "introtext": "Create worksheet with %s subtractions, where the result lies between %s and %s."
             },
             "multiplication": {
-                "url": "multiplication",
-                "introtext": "Create a worksheet with <strong>45 multiplications</strong>, where the 1. and 2. factor lie between <strong>1</strong> and <strong>10</strong>."
+                "introtext": "Create worksheet with %s multiplications, where the 1. and 2. factor lie between %s and %s."
             },
             "division": {
-                "url": "division",
-                "introtext": "Create a worksheet with <strong>45 divisions</strong>. They are the opposite of the multiplicatioins."
+                "introtext": "Create worksheet with %s division. Created from multiplications where the 1. and 2. factor lie between %s and %s."
             },
             "mixedequal": {
-                "url": "mixed1",
                 "title": "Mixed 1",
                 "introtext": "Creates a mixed calculation sheet. The distribution of the 4 basic operations is done equally."
             }
@@ -50,10 +47,10 @@
             "regenerate": "Regenerate calculations"
         },
         "sheetTitle": {
-            "addition": "Addition with result between %d and %d",
-            "subtraction": "Subtraction with result between %d and %d",
-            "multiplication": "Multiplication with factors between %d and %d",
-            "division": "Division",
+            "addition": "%d additions with result between %d and %d",
+            "subtraction": "%d subtractions with result between %d and %d",
+            "multiplication": "%d multiplication were the 1. and 2. factor lie between %d and %d",
+            "division": "%d divisions from multiplications where the 1. and 2. factor lie between %d and %d",
             "mixedequal": "Mixed (equally distributed)"
         }
     },

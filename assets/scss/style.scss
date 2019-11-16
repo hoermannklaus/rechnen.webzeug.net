@@ -1,0 +1,32 @@
+// Result
+.result {
+    border: 1px solid black;
+    display: inline-block;
+    height: 40px;
+    position: relative;
+    top: 10px;
+    width: 80px;
+}
+
+// Width classes
+.width-60 {
+    width: 60px !important;
+}
+.width-75 {
+    width: 75px !important;
+}
+
+// Inputs for the predefined cards
+.form-predefined {
+    input {
+        margin: 0 2px;
+        padding: 3px 5px;
+        height: 25px;
+        text-align: center;
+    }
+}
+
+// Overwrite Bootstrap Stuff
+.form-control {
+    display: inline-block !important;
+}
