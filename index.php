@@ -7,16 +7,6 @@ $i18n->init();
 $version = RechnenWebzeugNet\ApplicationVersion::get();
 $language = $i18n->getAppliedLang();
 
-if ($_SERVER['SERVER_NAME'] == 'localhost') {
-    $multiplicationLink = "generator.php?type=multiplication&amount=45&factor1=1&factor2=10&cols=3";
-    $divisionLink = "generator.php?type=division&amount=45&factor1=1&factor2=10&cols=3";
-    $mixedEqualLink = "generator.php?type=mixedequal&amount=45&resultMin=0&resultMax=100&factor1=1&factor2=10&cols=3";
-} else {
-    $multiplicationLink = L::startpage_predefined_multiplication_url;;
-    $divisionLink = L::startpage_predefined_division_url;;
-    $mixedEqualLink = L::startpage_predefined_mixedequal_url;;
-}
-
 $inputElements = [
     'amount'    => '<input type="number" min="1" max="100" class="form-control width-60" id="amount" name="amount" value="45" required>',
     'minResult' => '<input type="number" min="1" max="10000" class="form-control width-75" id="resultMin" name="resultMin" value="10" required>',
