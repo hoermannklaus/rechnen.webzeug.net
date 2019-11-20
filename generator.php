@@ -76,7 +76,7 @@ function addSpaceForSingleDigit(int $number) {
                     <a href="#" id="print" class="btn btn-primary mr-5">
                         <i class="fa fa-print"></i> <?php echo L::generatorpage_buttons_print; ?>
                     </a>
-                    <a href="index.php" class="btn btn-secondary mr-5">
+                    <a href="index.php" id="back" class="btn btn-secondary mr-5">
                         <i class="fa fa-arrow-circle-left"></i> <?php echo L::generatorpage_buttons_return; ?>
                     </a>
                     <a href="#" id="reload" class="btn btn-success">
