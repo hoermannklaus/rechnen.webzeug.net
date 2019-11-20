@@ -66,7 +66,7 @@ $inputElements = [
                             </p>
                             <input type="hidden" id="type" name="type" value="addition">
                             <input type="hidden" id="cols" name="cols" value="3">
-                            <button type="submit" class="btn btn-secondary w-100">
+                            <button type="submit" id="btn_addition" class="btn btn-secondary w-100">
                                 <i class="fa fa-plus text-primary"></i> <?php echo L::createSheet; ?>
                             </button>
                         </div>
@@ -93,7 +93,7 @@ $inputElements = [
                             </p>
                             <input type="hidden" id="type" name="type" value="subtraction">
                             <input type="hidden" id="cols" name="cols" value="3">
-                            <button type="submit" class="btn btn-secondary w-100">
+                            <button type="submit" id="btn_subtraction" class="btn btn-secondary w-100">
                                 <i class="fa fa-minus text-danger"></i> <?php echo L::createSheet; ?>
                             </button>
                         </div>
@@ -120,7 +120,7 @@ $inputElements = [
                             </p>
                             <input type="hidden" id="type" name="type" value="multiplication">
                             <input type="hidden" id="cols" name="cols" value="3">
-                            <button type="submit" class="btn btn-secondary w-100">
+                            <button type="submit" id="btn_multiplication" class="btn btn-secondary w-100">
                                 <i class="fa fa-times text-success"></i> <?php echo L::createSheet; ?>
                             </button>
                         </div>
@@ -147,7 +147,7 @@ $inputElements = [
                             </p>
                             <input type="hidden" id="type" name="type" value="division">
                             <input type="hidden" id="cols" name="cols" value="3">
-                            <button type="submit" class="btn btn-secondary w-100">
+                            <button type="submit" id="btn_division" class="btn btn-secondary w-100">
                                 <i class="fa fa-divide text-warning"></i> <?php echo L::createSheet; ?>
                             </button>
                         </div>
