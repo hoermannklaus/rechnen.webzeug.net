@@ -3,6 +3,7 @@
     "appTitle": "Übungsblatt Generator für Schüler",
     "createSheet": "Arbeitsblatt erstellen",
     "example": "Beispiel",
+    "imprint": "Impressum",
     "resetToDefault": "Auf Standard Werte zurücksetzen",
     "deleteCookieInfo": "Ihre zuletzte gesetzten Werte wurden in einem Cookie gespeichert. Diese Funktion löscht diesen und setzt die Werte auf Standard zurück.",
     "calculations": {
@@ -53,7 +54,7 @@
             "mixedequal": "Gemischt (gleichmäßig verteilt)"
         }
     },
-    "faq": {
+    "faqpage": {
         "title": "FAQs",
         "header": "FAQs zum Übungsblatt Generator",
         "introtext": "Diese Seite beinhaltet FAQs zu den verschiedensten Themen rund um den Übungsblatt Generator.",
@@ -81,5 +82,8 @@
             "question": "Wo sehe ich den Quellcode dieses Programms? Ist dieser Open-Source?",
             "answer": "Der Quellcode dieser Anwendung kann von jedem auf Github eingesehen werden: <a href='https://github.com/hoermannklaus/rechnen.webzeug.net' target='_blank'>hoermann.klaus/rechnen.webzeug.net</a>. "
         }
+    },
+    "imprintpage": {
+        "title": "Impressum"
     }
 }

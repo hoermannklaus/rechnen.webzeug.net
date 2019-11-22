@@ -3,6 +3,7 @@
     "appTitle": "Math worksheets for students",
     "createSheet": "Generate worksheet",
     "example": "Example",
+    "imprint": "Imprint",
     "resetToDefault": "Reset values to default",
     "deleteCookieInfo": "The values you last set were saved in a cookie. This function deletes this cookie and resets the values to default.",
     "calculations": {
@@ -54,7 +55,7 @@
             "mixedequal": "Mixed (equally distributed)"
         }
     },
-    "faq": {
+    "faqpage": {
         "title": "Help",
         "header": "Help for the Worksheet-Generator",
         "introtext": "This page contains informations about the functionality of the Worksheet-Generator as well as other interesting facts.",
@@ -82,5 +83,8 @@
             "question": "",
             "answer": ""
         }
+    },
+    "imprintpage": {
+        "title": "Imprint"
     }
 }

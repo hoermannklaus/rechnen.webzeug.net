@@ -4,6 +4,13 @@
             &copy; <?php echo strftime('%G'); ?> Klaus Hörmann-Engl, <a href="mailto:klaus@webzeug.net">klaus@webzeug.net</a>
         </small>
     </div>
+    <div class="col text-center">
+        <small class="text-muted float-right">
+            <a href="imprint.php">
+                <?php echo L::imprint; ?>
+            </a>
+        </small>
+    </div>
     <div class="col">
         <small class="text-muted float-right">
             <?php echo $version . ', ' . strtoupper($language); ?>
