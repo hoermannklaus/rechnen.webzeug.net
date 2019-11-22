@@ -43,7 +43,8 @@
         "buttons": {
             "print": "Zettel ausdrucken",
             "return": "Zurück zur Startseite",
-            "regenerate": "Rechnungen neu generieren"
+            "regenerate": "Rechnungen neu generieren",
+            "check": "Ergebnisse überprüfen"
         },
         "sheetTitle": {
             "addition": "%d Addition mit Ergebnis zwischen mindestens %d und maximal %d",

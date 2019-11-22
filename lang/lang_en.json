@@ -44,7 +44,8 @@
         "buttons": {
             "print": "Print sheet",
             "return": "Return to startpage",
-            "regenerate": "Regenerate calculations"
+            "regenerate": "Regenerate calculations",
+            "check": "Check results"
         },
         "sheetTitle": {
             "addition": "%d additions with result between %d and %d",
