@@ -15,8 +15,8 @@
     },
     "startpage": {
         "description": "Mit Hilfe diese Applikation lassen sich mathematische Übungsblätter der 4 Grundrechnungsarten per Zufall erstellen. Die Ausgabe ist zum Drucken optimiert.",
-        "header": "Zufallsgenerator für einfache Mathe Arbeitsblätter",
-        "introtext": "Auf dieser Website wird es euch ermöglicht <strong>einfache Mathematik Arbeitsblätter</strong> für die <strong>4 Grundrechungsarten</strong> zu erstellen. Die Darstellung dieser Arbeitsblätter ist <strong>druckoptimiert</strong>, sodass ein Ausdrucken gut möglich ist. Die erstellen Rechnungen werden dabei <strong>zufällig</strong> generiert.",
+        "header": "Generator für einfache Mathe Arbeitsblätter",
+        "introtext": "Auf dieser Website wird es euch ermöglicht <strong>einfache Mathematik Arbeitsblätter</strong> für die <strong>4 Grundrechungsarten</strong> zu erstellen. Die Darstellung dieser Arbeitsblätter ist <strong>druckoptimiert</strong>, sodass ein Ausdrucken gut möglich ist. Die erstellten Rechnungen werden dabei <strong>zufällig</strong> generiert.",
         "predefined": {
             "addition": {
                 "introtext": "Erstellt Arbeitsblatt mit %s Additionen, wobei das Ergebnis immer zwischen %s und %s liegt."
@@ -40,12 +40,16 @@
     "generatorpage": {
         "title": "Generator",
         "description": "Die Ausgabeseite stellt die konfigurierten Rechnungen dar. Je nachdem welche Einstellungen getroffen wurden, sind es mehr oder weniger Rechnungen von dem gleichen oder verschiedenen Typs.",
+        "summary": "Richtig: %d Falsch %d",
+        "confirm_1": "Bist Du sicher?",
+        "confirm_2": "Es wurden bereits Rechnungen ausgefüllt. Willst Du trotzdem neu generieren?",
         "buttons": {
-            "print": "Zettel ausdrucken",
-            "return": "Zurück zur Startseite",
-            "regenerate": "Rechnungen neu generieren",
-            "check": "Ergebnisse überprüfen"
+            "print": "Ausdrucken",
+            "return": "Startseite",
+            "regenerate": "Neu generieren",
+            "check": "Überprüfen"
         },
+        "showResults": "Ergebnisse anzeigen?",
         "sheetTitle": {
             "addition": "%d Addition mit Ergebnis zwischen mindestens %d und maximal %d",
             "subtraction": "%d Subtraktion mit Ergebnis zwischen midestens %d und maximal %d",

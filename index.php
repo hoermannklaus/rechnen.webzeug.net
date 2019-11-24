@@ -160,21 +160,6 @@ $inputElements = [
                     </div>
                 </form>
             </div>
-        
-            <!-- MIXED 1: EQUAL 
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card bg-info text-white mb-3">
-                    <div class="card-header">
-                        <i class="fa fa-blender"></i> <strong><?php echo L::startpage_predefined_mixedequal_title; ?></strong>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-test"><?php echo L::startpage_predefined_mixedequal_introtext; ?></p>
-                        <a href="<?php echo $mixedEqualLink; ?>" class="btn btn-secondary">
-                            <i class="fa fa-blender text-info"></i> <?php echo L::createSheet; ?>
-                        </a>
-                    </div>
-                </div>
-            </div>-->
         </div>
 
         <div class="row">
@@ -186,9 +171,6 @@ $inputElements = [
                 </div>
             </div>
         </div>
-
-        <?php //require_once('./includes/navbar.php'); ?>
-
         <?php require_once('./includes/footer.php'); ?>
     </div>
   </body>

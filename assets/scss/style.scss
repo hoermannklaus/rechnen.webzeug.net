@@ -1,3 +1,6 @@
+// VARIABLES
+$font-size: 28px;
+
 // Width classes
 .width-60 {
     width: 60px !important;
@@ -31,17 +34,28 @@
 
     form {
         label {
-            font-size: 28px;
+            font-size: $font-size;
             margin: 0;
             padding: 0;
         }
         input {
             width: 80px;
-            position: absolute;
             margin-left: 10px;
             font-size: 28px;
             height: auto;
             line-height: 28px;
         }
     }
+}
+
+#progress-row {
+    background-color: #e9ecef;
+}
+
+.mt-10 {
+    margin-top: 100px;
+}
+
+span.result {
+    font-size: $font-size;
 }

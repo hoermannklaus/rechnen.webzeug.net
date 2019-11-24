@@ -15,7 +15,6 @@
     },
     "startpage": {
         "description": "This website contains a math worksheet generator for the 4 basic arithmetic operations which uses random number to generate the calculations. The output is optimized for print.",
-        "title": "Startpage",
         "header": "Random generator for simple math worksheets",
         "introtext": "Using this website you can generate <strong>simple basic arithmetic worksheets</strong> and print them out. The created calculations are generated using PHPs <strong>random</strong> function.",
         "predefined": {
@@ -41,12 +40,16 @@
     "generatorpage": {
         "title": "Generator",
         "description": "This page shows the randomly created calculations. More or less, depending on the configured amount of calculations and chosen type(s).",
+        "summary": "Correct: %d Inorrect: %d",
+        "confirm_1": "Are you sure?",
+        "confirm_2": "There are already some calculations filled out. Still want to regenerate?",
         "buttons": {
             "print": "Print sheet",
             "return": "Return to startpage",
             "regenerate": "Regenerate calculations",
             "check": "Check results"
         },
+        "showResults": "Show results?",
         "sheetTitle": {
             "addition": "%d additions with result between %d and %d",
             "subtraction": "%d subtractions with result between %d and %d",

@@ -15,7 +15,7 @@ class Utility {
     public static function calculateWidthOfInput(int $number): int {
         $width = 80;
         $singleWidth = 20;
-        $padding = 10;
+        $padding = 16;
 
         if ($number !== 0) {
             $digits = floor(log10($number) + 1);
