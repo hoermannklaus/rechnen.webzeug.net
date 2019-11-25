@@ -1,3 +1,13 @@
+/**
+ * Checks if the input key is anumber
+ */
+function isNumberKey(evt) {
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+        return false;
+    return true;
+}
+
 $(function() {
 
     /**
@@ -54,7 +64,7 @@ $(function() {
        $("#progressbar")
         .data("valuenow", percentage)
         .attr("aria-valuenow", percentage)
-        .text(percentage + "% ausgefüllt")
+        .text(percentage + "% " + langEntered)
         .css("width", percentage + "%");
     });
 
@@ -80,6 +90,9 @@ $(function() {
                     $(this).find("span.result").show();
                 }
                 incorrect++;
+            }
+            if (!$("#showResult").is(":checked")) {
+                $(this).find("span.result").hide();
             }
         });
         $("#resultSummary").text(

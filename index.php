@@ -40,7 +40,7 @@ $inputElements = [
   <body>
     <?php require_once('./includes/gtmBody.php'); ?>
     <div class="container">
-        <div class="row">
+        <div class="row mb-4">
             <div class="col">
                 <div class="jumbotron mt-5 text-center">
                     <h1>

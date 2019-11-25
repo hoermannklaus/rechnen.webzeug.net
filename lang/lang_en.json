@@ -43,6 +43,7 @@
         "summary": "Correct: %d Inorrect: %d",
         "confirm_1": "Are you sure?",
         "confirm_2": "There are already some calculations filled out. Still want to regenerate?",
+        "entered": "filled",
         "buttons": {
             "print": "Print sheet",
             "return": "Return to startpage",
@@ -83,8 +84,8 @@
             "answer": "I am <strong>very happy about each single request</strong>, no matter the nature of the message (praise, criticism or suggestion). Just write an email to <a href='mailto:klaus@webzeug.net'>klaus@webzeug.net</a>. I will try to respond as quickly as possible. <strong>Thank you very much.</strong>"
         },
         "six": {
-            "question": "",
-            "answer": ""
+            "question": "Where do I get the source code for this application? Is it Open-Source?",
+            "answer": "The source code for the worksheet generator is publicly available on Github: <a href='https://github.com/hoermannklaus/rechnen.webzeug.net' target='_blank'>hoermann.klaus/rechnen.webzeug.net</a>."
         }
     }
 }

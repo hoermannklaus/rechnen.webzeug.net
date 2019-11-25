@@ -2,6 +2,10 @@
 
 .width-75 { width: 75px !important; }
 
+.form-predefined { height: 100%; }
+.form-predefined .card { height: 100%; }
+.form-predefined .card .card-body { display: flex; flex-direction: column; }
+.form-predefined .card .card-body .card-test { flex: 1; }
 .form-predefined input { margin: 0 2px; padding: 3px 5px; height: 25px; text-align: center; }
 
 .form-control { display: inline-block !important; }
@@ -14,8 +18,13 @@
 
 #progress-row { background-color: #e9ecef; }
 
-.mt-10 { margin-top: 100px; }
+.mt-100 { margin-top: 100px; }
+
+.mt-120 { margin-top: 120px; }
 
 span.result { font-size: 28px; }
+
+/* Firefox */
+input[type=number] { -moz-appearance: textfield; }
 
 /*# sourceMappingURL=style.css.map */

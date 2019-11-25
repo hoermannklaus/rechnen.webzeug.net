@@ -11,6 +11,21 @@ $font-size: 28px;
 
 // Inputs for the predefined cards
 .form-predefined {
+    height: 100%;
+
+    .card {
+        height: 100%;
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+
+            .card-test {
+                flex: 1;
+            }
+        }
+    }
+
     input {
         margin: 0 2px;
         padding: 3px 5px;
@@ -52,10 +67,19 @@ $font-size: 28px;
     background-color: #e9ecef;
 }
 
-.mt-10 {
+.mt-100 {
     margin-top: 100px;
+}
+
+.mt-120 {
+    margin-top: 120px;
 }
 
 span.result {
     font-size: $font-size;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance:textfield;
 }

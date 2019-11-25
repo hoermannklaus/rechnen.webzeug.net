@@ -63,6 +63,7 @@ switch ($_GET['type']) {
         var langSummary = "<?php echo L::generatorpage_summary; ?>";
         var langConfirm1 = "<?php echo L::generatorpage_confirm_1; ?>";
         var langConfirm2 = "<?php echo L::generatorpage_confirm_2; ?>";
+        var langEntered = "<?php echo L::generatorpage_entered; ?>";
     </script>
   </head>
   <body>
@@ -101,7 +102,7 @@ switch ($_GET['type']) {
     <div class="container-fluid mb-5">
 
         <!-- JUMBOTRON -->
-        <div class="row mt-10">
+        <div class="row mt-120">
             <div class="col">
                 <div class="jumbotron">
                     <h1><?php echo call_user_func('L::calculations_' . $_GET['type']) ?></h1>
@@ -123,7 +124,7 @@ switch ($_GET['type']) {
             }
             $counter = 0;
 
-            $calcTemplate = "<div class='calculation' id='calc%d'><form><label>%s</label><input type='number' class='form-control input-result' style='width: %dpx'; data-result='%d'/><i class='fa fa-check fa-2x text-success ml-2' style='display:none;'></i><i class='fa fa-times fa-2x text-danger ml-2' style='display:none;'></i><span class='result ml-2 font-weight-bold' style='display: none;'>%d</span></form></div>";
+            $calcTemplate = "<div class='calculation' id='calc%d'><form><label>%s</label><input type='number' autocomplete='off' onkeypress='return isNumberKey(event)' class='form-control input-result' style='width: %dpx'; data-result='%d'/><i class='fa fa-check fa-2x text-success ml-2 d-print-none' style='display:none;'></i><i class='fa fa-times fa-2x text-danger ml-2 d-print-none' style='display:none;'></i><span class='result ml-2 font-weight-bold d-print-none' style='display: none;'>%d</span></form></div>";
             foreach ($lists as $column) {
                 $cols = 12/$_GET['cols'];
                 echo "<div class='col-xs-12 col-sm-6 col-md-" . $cols . "'>";

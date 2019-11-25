@@ -43,6 +43,7 @@
         "summary": "Richtig: %d Falsch %d",
         "confirm_1": "Bist Du sicher?",
         "confirm_2": "Es wurden bereits Rechnungen ausgefüllt. Willst Du trotzdem neu generieren?",
+        "entered": "ausgefüllt",
         "buttons": {
             "print": "Ausdrucken",
             "return": "Startseite",
