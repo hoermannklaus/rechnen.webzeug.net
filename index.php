@@ -54,7 +54,7 @@ $inputElements = [
         </div>
         <div class="row mb-3">
             <!-- ADDITION -->
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
                 <form action="generator.php" class="form-inline form-predefined addition" data-cookiename="addition">
                     <div class="card bg-primary text-white mb-3">
                         <div class="card-header">
@@ -81,7 +81,7 @@ $inputElements = [
             </div>
 
             <!-- SUBTRAKTION -->
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
                 <form action="generator.php" class="form-inline form-predefined subtraction" data-cookiename="subtraction">
                     <div class="card bg-danger text-white mb-3">
                         <div class="card-header">
@@ -108,7 +108,7 @@ $inputElements = [
             </div>
 
             <!-- MULTIPLICATION -->
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
                 <form action="generator.php" class="form-inline form-predefined multiplication" data-cookiename="multiplication">
                     <div class="card bg-success text-white mb-3">
                         <div class="card-header">

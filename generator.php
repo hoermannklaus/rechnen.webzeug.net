@@ -102,7 +102,7 @@ switch ($_GET['type']) {
     <div class="container-fluid mb-5">
 
         <!-- JUMBOTRON -->
-        <div class="row mt-120">
+        <div class="row mt-160">
             <div class="col">
                 <div class="jumbotron">
                     <h1><?php echo call_user_func('L::calculations_' . $_GET['type']) ?></h1>

@@ -71,9 +71,16 @@ $font-size: 28px;
     margin-top: 100px;
 }
 
-.mt-120 {
-    margin-top: 120px;
+.mt-160 {
+    margin-top: 160px;
 }
+
+@media (min-width: 768px) {
+    .mt-160 {
+        margin-top: 120px;
+    }
+}
+
 
 span.result {
     font-size: $font-size;
