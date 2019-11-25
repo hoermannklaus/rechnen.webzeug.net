@@ -16,7 +16,7 @@
     "startpage": {
         "description": "Mit Hilfe diese Applikation lassen sich mathematische Übungsblätter der 4 Grundrechnungsarten per Zufall erstellen. Die Ausgabe ist zum Drucken optimiert.",
         "header": "Generator für einfache Mathe Arbeitsblätter",
-        "introtext": "Auf dieser Website wird es euch ermöglicht <strong>einfache Mathematik Arbeitsblätter</strong> für die <strong>4 Grundrechungsarten</strong> zu erstellen. Die Darstellung dieser Arbeitsblätter ist <strong>druckoptimiert</strong>, sodass ein Ausdrucken gut möglich ist. Die erstellten Rechnungen werden dabei <strong>zufällig</strong> generiert.",
+        "introtext": "Auf dieser Website wird es euch ermöglicht <strong>einfache Mathematik Arbeitsblätter</strong> für die <strong>4 Grundrechungsarten</strong> zu erstellen und <strong>im Browser zu lösen</strong>. Die Darstellung dieser Arbeitsblätter ist <strong>druckoptimiert</strong>, sodass ein Ausdrucken gut möglich ist. Die erstellten Rechnungen werden zufälllig mittels der PHP Funktion <a href='https://www.php.net/manual/de/function.mt-rand.php' target='_blank'>mb_rand</a> erzeugt.",
         "predefined": {
             "addition": {
                 "introtext": "Erstellt Arbeitsblatt mit %s Additionen, wobei das Ergebnis immer zwischen %s und %s liegt."
