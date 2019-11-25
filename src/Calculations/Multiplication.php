@@ -35,8 +35,8 @@ class Multiplication implements Calculation
 
     public static function createRandomMultiplication(int $factor1, int $factor2) {
         $result = 0;
-        $multiplier = rand($factor1, $factor2);
-        $multiplicand = rand($factor1, $factor2);
+        $multiplier = mt_rand($factor1, $factor2);
+        $multiplicand = mt_rand($factor1, $factor2);
         return new Multiplication($multiplier, $multiplicand);
     }
 }

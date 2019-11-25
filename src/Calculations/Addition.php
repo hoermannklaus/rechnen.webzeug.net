@@ -35,9 +35,9 @@ class Addition implements Calculation
 
      public static function createRandomAddition(int $minResult, int $maxResult) {
         $result = 0;
-        $summand1 = rand(0, ($maxResult-1));
+        $summand1 = mt_rand(0, ($maxResult-1));
         while ($result > $maxResult | $result == 0 | $result < $minResult) {
-            $summand2 = rand(1, ($maxResult - $summand1));
+            $summand2 = mt_rand(1, ($maxResult - $summand1));
             $result = $summand1 + $summand2;
         }
         return new Addition($summand1, $summand2);
