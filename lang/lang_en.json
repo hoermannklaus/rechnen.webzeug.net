@@ -11,7 +11,8 @@
         "addition": "Addition",
         "subtraction": "Subtraction",
         "multiplication": "Multiplication",
-        "division": "Division"
+        "division": "Division",
+        "mixed": "Mixed"
     },
     "startpage": {
         "description": "This website contains a math worksheet generator for the 4 basic arithmetic operations which uses random number to generate the calculations. The output is optimized for print.",
@@ -29,6 +30,9 @@
             },
             "division": {
                 "introtext": "Create worksheet with %s division. Created from multiplications where the 1. and 2. factor lie between %s and %s."
+            },
+            "mixed": {
+                "introtext": "Creates a worksheet with %s calculations depending on the chosen types."
             },
             "mixedequal": {
                 "title": "Mixed 1",

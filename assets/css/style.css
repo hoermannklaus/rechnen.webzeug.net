@@ -6,7 +6,7 @@
 .form-predefined .card { height: 100%; }
 .form-predefined .card .card-body { display: flex; flex-direction: column; }
 .form-predefined .card .card-body .card-test { flex: 1; }
-.form-predefined input { margin: 0 2px; padding: 3px 5px; height: 25px; text-align: center; }
+.form-predefined input[type=number] { margin: 0 2px; padding: 3px 5px; height: 25px; text-align: center; }
 
 .form-control { display: inline-block !important; }
 

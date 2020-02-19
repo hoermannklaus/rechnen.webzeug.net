@@ -160,6 +160,34 @@ $inputElements = [
                     </div>
                 </form>
             </div>
+
+            <!-- MIXED -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <form action="generator.php" class="form-predefined mixed" data-cookiename="mixed">
+                    <div class="card bg-info text-white mb-3">
+                        <div class="card-header">
+                            <i class="fas fa-blender"></i> <strong><?php echo L::calculations_mixed; ?></strong>
+                        </div>
+                        <div class="card-body ml-3">
+                            <p class="card-test text-justify">
+                                <?php echo sprintf(L::startpage_predefined_mixed_introtext, $inputElements['amount']); ?><br><br>
+                                <input class="form-check-input" type="checkbox" value="" id="mixedAddition"><label class="form-check-label" for="mixedAddition"><?php echo L::calculations_addition; ?></label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="mixedSubtraction"><label class="form-check-label" for="mixedSubtraction"><?php echo L::calculations_subtraction; ?></label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="mixedMultiplication"><label class="form-check-label" for="mixedMultiplication"><?php echo L::calculations_multiplication; ?></label><br>
+                                <input class="form-check-input" type="checkbox" value="" id="mixedDivision"><label class="form-check-label" for="mixedDivision"><?php echo L::calculations_division; ?></label>
+                            </p>
+                            <input type="hidden" id="type" name="type" value="mixed">
+                            <input type="hidden" id="cols" name="cols" value="3">
+                            <button type="submit" id="btn_mixed" class="btn btn-secondary w-1000">
+                                <i class="fas fa-blender text-info"></i> <?php echo L::createSheet; ?>
+                            </button>
+                        </div>
+                        <div class="card-footer" style="display:none">
+                            TODO
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <div class="row">

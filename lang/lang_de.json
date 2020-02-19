@@ -11,7 +11,8 @@
         "addition": "Addition",
         "subtraction": "Subtraktion",
         "multiplication": "Multiplikation",
-        "division": "Division"
+        "division": "Division",
+        "mixed": "Gemischt"
     },
     "startpage": {
         "description": "Mit Hilfe diese Applikation lassen sich mathematische Übungsblätter der 4 Grundrechnungsarten per Zufall erstellen. Die Ausgabe ist zum Drucken optimiert.",
@@ -29,6 +30,9 @@
             },
             "division": {
                 "introtext": "Erstellt Arbeitsblatt mit %s Divisionen. Erstellt aus Multiplikationen, bei denen der 1. und 2. Faktor zwischen %s und %s bleiben."
+            },
+            "mixed": {
+                "introtext": "Erstellen eines Arbeitsblatts mit %s Rechnungen aus den ausgewählten Arten."
             },
             "mixedequal": {
                 "title": "Gemischt 1",
