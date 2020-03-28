@@ -8,11 +8,23 @@ $version = RechnenWebzeugNet\ApplicationVersion::get();
 $language = $i18n->getAppliedLang();
 
 $inputElements = [
-    'amount'    => '<input type="number" min="1" max="100" class="form-control width-60" id="amount" name="amount" value="45" required>',
-    'minResult' => '<input type="number" min="1" max="10000" class="form-control width-75" id="resultMin" name="resultMin" value="10" required>',
-    'maxResult' => '<input type="number" min="1" max="10000" class="form-control width-75" id="resultMax" name="resultMax" value="100" required>',
-    'factor1'   => '<input type="number" min="1" max="10000" class="form-control width-75" id="factor1" name="factor1" value="1" required>',
-    'factor2'   => '<input type="number" min="1" max="10000" class="form-control width-75" id="factor2" name="factor2" value="10" required>',
+    'addition-amount'    => '<input type="number" min="1" max="100" class="form-control width-60" id="addition-amount" name="addition-amount" value="45" required>',
+    'addition-resultMin' => '<input type="number" min="1" max="10000" class="form-control width-75" id="addition-resultMin" name="addition-resultMin" value="10" required>',
+    'addition-resultMax' => '<input type="number" min="1" max="10000" class="form-control width-75" id="addition-resultMax" name="addition-resultMax" value="100" required>',
+
+    'subtraction-amount'    => '<input type="number" min="1" max="100" class="form-control width-60" id="subtraction-amount" name="subtraction-amount" value="45" required>',
+    'subtraction-resultMin' => '<input type="number" min="1" max="10000" class="form-control width-75" id="subtraction-resultMin" name="subtraction-resultMin" value="10" required>',
+    'subtraction-resultMax' => '<input type="number" min="1" max="10000" class="form-control width-75" id="subtraction-resultMax" name="subtraction-resultMax" value="100" required>',
+
+    'multiplication-amount'    => '<input type="number" min="1" max="100" class="form-control width-60" id="multiplication-amount" name="multiplication-amount" value="45" required>',
+    'multiplication-factor1'   => '<input type="number" min="1" max="10000" class="form-control width-75" id="multiplication-factor1" name="multiplication-factor1" value="1" required>',
+    'multiplication-factor2'   => '<input type="number" min="1" max="10000" class="form-control width-75" id="multiplication-factor2" name="multiplication-factor2" value="10" required>',
+
+    'division-amount'    => '<input type="number" min="1" max="100" class="form-control width-60" id="division-amount" name="division-amount" value="45" required>',
+    'division-factor1'   => '<input type="number" min="1" max="10000" class="form-control width-75" id="division-factor1" name="division-factor1" value="1" required>',
+    'division-factor2'   => '<input type="number" min="1" max="10000" class="form-control width-75" id="division-factor2" name="division-factor2" value="10" required>',
+
+    'mixed-amount'   => '<input type="number" min="1" max="10000" class="form-control width-75" id="mixed-amount" name="mixed-amount" value="45" required>',
 ];
 
 ?>
@@ -55,17 +67,22 @@ $inputElements = [
         <div class="row mb-3">
             <!-- ADDITION -->
             <div class="col-12 col-md-6 col-lg-3 mb-3">
-                <form action="generator.php" class="form-inline form-predefined addition" data-cookiename="addition">
+                <form action="generator.php" class="form-inline form-predefined addition">
                     <div class="card bg-primary text-white mb-3">
                         <div class="card-header">
                             <i class="fa fa-plus"></i> <strong><?php echo L::calculations_addition; ?></strong>
                         </div>
                         <div class="card-body">
                             <p class="card-test text-justify">
-                                <?php echo sprintf(L::startpage_predefined_addition_introtext, $inputElements['amount'], $inputElements['minResult'], $inputElements['maxResult']); ?>
+                                <?php echo sprintf(
+                                    L::startpage_predefined_addition_introtext,
+                                    $inputElements['addition-amount'],
+                                    $inputElements['addition-resultMin'],
+                                    $inputElements['addition-resultMax']
+                                ); ?>
                             </p>
-                            <input type="hidden" id="type" name="type" value="addition">
-                            <input type="hidden" id="cols" name="cols" value="3">
+                            <input type="hidden" id="addition-type" name="addition-type" value="addition">
+                            <input type="hidden" id="addition-cols" name="addition-cols" value="3">
                             <button type="submit" id="btn_addition" class="btn btn-secondary w-100">
                                 <i class="fa fa-plus text-primary"></i> <?php echo L::createSheet; ?>
                             </button>
@@ -73,7 +90,7 @@ $inputElements = [
                         <div class="card-footer" style="display: none;">
                             <small class="text-white">
                                 <i class="fa fa-trash-alt"></i>&nbsp;
-                                <a href="#" class="text-white delete-cookie" data-toggle="tooltip" data-placement="bottom" title="<?php echo L::deleteCookieInfo; ?>"><?php echo L::resetToDefault; ?></a>
+                                <a href="#" class="text-white delete-localStorage" data-toggle="tooltip" data-placement="bottom" title="<?php echo L::deleteCookieInfo; ?>"><?php echo L::resetToDefault; ?></a>
                             </small>
                         </div>
                     </div>
@@ -82,17 +99,22 @@ $inputElements = [
 
             <!-- SUBTRAKTION -->
             <div class="col-12 col-md-6 col-lg-3 mb-3">
-                <form action="generator.php" class="form-inline form-predefined subtraction" data-cookiename="subtraction">
+                <form action="generator.php" class="form-inline form-predefined subtraction">
                     <div class="card bg-danger text-white mb-3">
                         <div class="card-header">
                             <i class="fa fa-minus"></i> <strong><?php echo L::calculations_subtraction; ?></strong>
                         </div>
                         <div class="card-body">
                             <p class="card-test text-justify">
-                                <?php echo sprintf(L::startpage_predefined_subtraction_introtext, $inputElements['amount'], $inputElements['minResult'], $inputElements['maxResult']); ?>
+                                <?php echo sprintf(
+                                    L::startpage_predefined_subtraction_introtext,
+                                    $inputElements['subtraction-amount'],
+                                    $inputElements['subtraction-resultMin'],
+                                    $inputElements['subtraction-resultMax']
+                                ); ?>
                             </p>
-                            <input type="hidden" id="type" name="type" value="subtraction">
-                            <input type="hidden" id="cols" name="cols" value="3">
+                            <input type="hidden" id="subtraction-type" name="subtraction-type" value="subtraction">
+                            <input type="hidden" id="subtraction-cols" name="subtraction-cols" value="3">
                             <button type="submit" id="btn_subtraction" class="btn btn-secondary w-100">
                                 <i class="fa fa-minus text-danger"></i> <?php echo L::createSheet; ?>
                             </button>
@@ -100,7 +122,7 @@ $inputElements = [
                         <div class="card-footer" style="display: none;">
                             <small class="text-white">
                                 <i class="fa fa-trash-alt"></i>&nbsp;
-                                <a href="#" class="text-white delete-cookie" data-toggle="tooltip" data-placement="bottom" title="<?php echo L::deleteCookieInfo; ?>"><?php echo L::resetToDefault; ?></a>
+                                <a href="#" class="text-white delete-localStorage" data-toggle="tooltip" data-placement="bottom" title="<?php echo L::deleteCookieInfo; ?>"><?php echo L::resetToDefault; ?></a>
                             </small>
                         </div>
                     </div>
@@ -109,17 +131,22 @@ $inputElements = [
 
             <!-- MULTIPLICATION -->
             <div class="col-12 col-md-6 col-lg-3 mb-3">
-                <form action="generator.php" class="form-inline form-predefined multiplication" data-cookiename="multiplication">
+                <form action="generator.php" class="form-inline form-predefined multiplication">
                     <div class="card bg-success text-white mb-3">
                         <div class="card-header">
                             <i class="fa fa-times"></i> <strong><?php echo L::calculations_multiplication; ?></strong>
                         </div>
                         <div class="card-body">
                             <p class="card-test text-justify">
-                                <?php echo sprintf(L::startpage_predefined_multiplication_introtext, $inputElements['amount'], $inputElements['factor1'], $inputElements['factor2']); ?>
+                                <?php echo sprintf(
+                                    L::startpage_predefined_multiplication_introtext,
+                                    $inputElements['multiplication-amount'],
+                                    $inputElements['multiplication-factor1'],
+                                    $inputElements['multiplication-factor2']
+                                ); ?>
                             </p>
-                            <input type="hidden" id="type" name="type" value="multiplication">
-                            <input type="hidden" id="cols" name="cols" value="3">
+                            <input type="hidden" id="multiplication-type" name="multiplication-type" value="multiplication">
+                            <input type="hidden" id="multiplication-cols" name="multiplication-cols" value="3">
                             <button type="submit" id="btn_multiplication" class="btn btn-secondary w-100">
                                 <i class="fa fa-times text-success"></i> <?php echo L::createSheet; ?>
                             </button>
@@ -127,7 +154,7 @@ $inputElements = [
                         <div class="card-footer" style="display: none;">
                             <small class="text-white">
                                 <i class="fa fa-trash-alt"></i>&nbsp;
-                                <a href="#" class="text-white delete-cookie" data-toggle="tooltip" data-placement="bottom" title="<?php echo L::deleteCookieInfo; ?>"><?php echo L::resetToDefault; ?></a>
+                                <a href="#" class="text-white delete-localStorage" data-toggle="tooltip" data-placement="bottom" title="<?php echo L::deleteCookieInfo; ?>"><?php echo L::resetToDefault; ?></a>
                             </small>
                         </div>
                     </div>
@@ -136,17 +163,22 @@ $inputElements = [
 
             <!-- DIVISION -->
             <div class="col-12 col-md-6 col-lg-3">
-                <form action="generator.php" class="form-inline form-predefined division" data-cookiename="division">
+                <form action="generator.php" class="form-inline form-predefined division">
                     <div class="card bg-warning text-white mb-3">
                         <div class="card-header">
                             <i class="fa fa-divide"></i> <strong><?php echo L::calculations_division; ?></strong>
                         </div>
                         <div class="card-body">
                             <p class="card-test text-justify">
-                            <?php echo sprintf(L::startpage_predefined_division_introtext, $inputElements['amount'], $inputElements['factor1'], $inputElements['factor2']); ?>
+                            <?php echo sprintf(
+                                L::startpage_predefined_division_introtext,
+                                $inputElements['division-amount'],
+                                $inputElements['division-factor1'],
+                                $inputElements['division-factor2']
+                            ); ?>
                             </p>
-                            <input type="hidden" id="type" name="type" value="division">
-                            <input type="hidden" id="cols" name="cols" value="3">
+                            <input type="hidden" id="division-type" name="division-type" value="division">
+                            <input type="hidden" id="division-cols" name="division-cols" value="3">
                             <button type="submit" id="btn_division" class="btn btn-secondary w-100">
                                 <i class="fa fa-divide text-warning"></i> <?php echo L::createSheet; ?>
                             </button>
@@ -154,7 +186,7 @@ $inputElements = [
                         <div class="card-footer" style="display: none;">
                             <small class="text-white">
                                 <i class="fa fa-trash-alt"></i>&nbsp;
-                                <a href="#" class="text-white delete-cookie" data-toggle="tooltip" data-placement="bottom" title="<?php echo L::deleteCookieInfo; ?>"><?php echo L::resetToDefault; ?></a>
+                                <a href="#" class="text-white delete-localStorage" data-toggle="tooltip" data-placement="bottom" title="<?php echo L::deleteCookieInfo; ?>"><?php echo L::resetToDefault; ?></a>
                             </small>
                         </div>
                     </div>
@@ -163,27 +195,46 @@ $inputElements = [
 
             <!-- MIXED -->
             <div class="col-12 col-md-6 col-lg-3">
-                <form action="generator.php" class="form-predefined mixed" data-cookiename="mixed">
+                <form action="generator.php" class="form-predefined mixed">
                     <div class="card bg-info text-white mb-3">
                         <div class="card-header">
                             <i class="fas fa-blender"></i> <strong><?php echo L::calculations_mixed; ?></strong>
                         </div>
                         <div class="card-body ml-3">
                             <p class="card-test text-justify">
-                                <?php echo sprintf(L::startpage_predefined_mixed_introtext, $inputElements['amount']); ?><br><br>
-                                <input class="form-check-input" type="checkbox" value="" id="mixedAddition"><label class="form-check-label" for="mixedAddition"><?php echo L::calculations_addition; ?></label><br>
-                                <input class="form-check-input" type="checkbox" value="" id="mixedSubtraction"><label class="form-check-label" for="mixedSubtraction"><?php echo L::calculations_subtraction; ?></label><br>
-                                <input class="form-check-input" type="checkbox" value="" id="mixedMultiplication"><label class="form-check-label" for="mixedMultiplication"><?php echo L::calculations_multiplication; ?></label><br>
-                                <input class="form-check-input" type="checkbox" value="" id="mixedDivision"><label class="form-check-label" for="mixedDivision"><?php echo L::calculations_division; ?></label>
+                                <?php echo sprintf(
+                                    L::startpage_predefined_mixed_introtext,
+                                    $inputElements['mixed-amount']
+                                ); ?>
+                                <br><br>
+                                <input class="form-check-input" type="checkbox" value="addition-yes" id="mixed-addition" name="mixed-addition"><label class="form-check-label" for="mixedAddition"><?php echo L::calculations_addition; ?></label><br>
+                                <input class="form-check-input" type="checkbox" value="subtraction-yes" id="mixed-subtraction" name="mixed-subtraction"><label class="form-check-label" for="mixedSubtraction"><?php echo L::calculations_subtraction; ?></label><br>
+                                <input class="form-check-input" type="checkbox" value="multiplication-yes" id="mixed-multiplication" name="mixed-multiplication"><label class="form-check-label" for="mixedMultiplication"><?php echo L::calculations_multiplication; ?></label><br>
+                                <input class="form-check-input" type="checkbox" value="division-yes" id="mixed-division" name="mixed-division"><label class="form-check-label" for="mixedDivision"><?php echo L::calculations_division; ?></label>
                             </p>
-                            <input type="hidden" id="type" name="type" value="mixed">
-                            <input type="hidden" id="cols" name="cols" value="3">
+                            <input type="hidden" id="mixed-type" name="mixed-type" value="mixed">
+                            <input type="hidden" id="mixed-cols" name="mixed-cols" value="3">
+                            <!-- Addition -->
+                            <input type="hidden" id="addition-resultMin" name="addition-resultMin" />
+                            <input type="hidden" id="addition-resultMax" name="addition-resultMax" />
+                            <!-- Subtraction -->
+                            <input type="hidden" id="subtraction-resultMin" name="subtraction-resultMin" />
+                            <input type="hidden" id="subtraction-resultMax" name="subtraction-resultMax" />
+                            <!-- Multiplication -->
+                            <input type="hidden" id="multiplication-factor1" name="multiplication-factor1" />
+                            <input type="hidden" id="multiplication-factor2" name="multiplication-factor2" />
+                            <!-- Division -->
+                            <input type="hidden" id="division-factor1" name="division-factor1" />
+                            <input type="hidden" id="division-factor2" name="division-factor2" />
                             <button type="submit" id="btn_mixed" class="btn btn-secondary w-1000">
                                 <i class="fas fa-blender text-info"></i> <?php echo L::createSheet; ?>
                             </button>
                         </div>
-                        <div class="card-footer" style="display:none">
-                            TODO
+                        <div class="card-footer" style="display: none;">
+                            <small class="text-white">
+                                <i class="fa fa-trash-alt"></i>&nbsp;
+                                <a href="#" class="text-white delete-localStorage" data-toggle="tooltip" data-placement="bottom" title="<?php echo L::deleteCookieInfo; ?>"><?php echo L::resetToDefault; ?></a>
+                            </small>
                         </div>
                     </div>
                 </form>
